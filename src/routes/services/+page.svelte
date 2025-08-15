@@ -1,0 +1,174 @@
+<script lang="ts">
+	import { pageTitle } from '$lib/stores/pageTitle';
+	pageTitle.set('Servicios');
+</script>
+
+<div class="px-8 py-10">
+	<h1 class="text-4xl font-bold mb-8 text-center py-16">¿Qué necesitas cotizar hoy?</h1>
+
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+		<!-- Tarjeta 1 -->
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/clinic.jpg"
+					alt="clínicas"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Pisos de clínicas</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/industry.jpg"
+					alt="bodegas"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Pisos de bodegas</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/pitch.jpg"
+					alt="canchas"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Canchas deportivas</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/house.webp"
+					alt="viviendas"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Vivienda</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/wall.jpg"
+					alt="paredes"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Paredes</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card bg-base-100 image-full w-96 shadow-sm">
+			<figure>
+				<img
+					src="/img/types/restaurant.webp"
+					alt="restaurantes"
+					class="w-[336px] h-[448px]"
+				/>
+			</figure>
+			<div class="card-body flex flex-col">
+				<h2 class="card-title">Restaurantes grado alimenticio</h2>
+
+				<!-- Botón alineado abajo a la derecha -->
+				<div class="card-actions mt-auto justify-end">
+					<a
+						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
+						href="https://wa.me/50255272948"
+					>
+						Cotizar
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">Avalados por la cámara de construcción</h1>
+
+
+</div>
+
+<div class="bg-[#1b68a9] text-white px-10 py-12 flex flex-col md:flex-row items-center md:items-start gap-8 rounded-md w-full">
+  <!-- Izquierda -->
+  <div class="md:w-1/3 text-center md:text-left text-4xl font-semibold leading-relaxed">
+    <h1>Higieniza tus áreas con nosotros</h1>
+  </div>
+
+  <!-- Derecha -->
+  <div class="md:w-2/3">
+    <p class="mb-6 text-base md:text-lg leading-relaxed">
+      Somos expertos en la aplicación de resina epóxica de grado quirúrgico e industrial en una gran cantidad de superficies como pisos de clínicas, pisos de bodegas, canchas, paredes, tops y muchos otros servicios.
+    </p>
+    <a href="https://wa.me/50255272948" class="inline-block bg-[#0f3a5d] hover:bg-[#0d314e] text-white px-6 py-3 rounded-md font-medium transition">
+      Obtén una cotización
+    </a>
+  </div>
+</div>
+
+<div class="px-8 py-10">
+	<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los expertos!</h1>
+</div>

@@ -129,14 +129,15 @@
 		</div>
 	</div>
 
-	<div class="flex items-center justify-center gap-10 py-8">
-		<h1 class="text-3xl font-bold text-[#1b68a9] text-center">
+	<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 py-8">
+		<h1 class="text-3xl font-bold text-[#1b68a9] text-center md:text-left">
 			Avalados por el Ministerio de Salud Pública y Asistencia Social -MSPAS-
 		</h1>
-		<img src="/img/mspas.png" alt="Cámara de Construcción" class="h-[60px]" />
+		<img src="/img/mspas.png" alt="MSPAS" class="h-[60px]" />
 	</div>
-	<div class="flex items-center justify-center gap-10">
-		<h1 class="text-3xl font-bold text-[#1b68a9] text-center">
+
+	<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 py-8">
+		<h1 class="text-3xl font-bold text-[#1b68a9] text-center md:text-left">
 			Avalados por la Cámara de Construcción
 		</h1>
 		<img src="/img/camara.jpg" alt="Cámara de Construcción" class="h-[60px]" />

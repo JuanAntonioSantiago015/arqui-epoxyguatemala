@@ -55,7 +55,7 @@
 						href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
 						target="_blank"
 						rel="noopener"
-						class="btn btn-sm md:btn-md bg-green-600 hover:bg-green-700 text-white ml-2"
+						class="btn btn-sm md:btn-md bg-green-600 hover:bg-green-700 text-white md:ml-2 flex justify-center items-center px-3"
 					>
 						<span class="hidden md:inline">WhatsApp</span>
 						<span class="md:hidden">

@@ -3,19 +3,19 @@
 	pageTitle.set('Servicios');
 </script>
 
-<div class="px-8 py-10">
+<div class="px-8 py-10 overflow-x-hidden">
+	<!-- Título principal -->
 	<h1 class="text-4xl font-bold mb-8 text-center py-16">¿Qué necesitas cotizar hoy?</h1>
 
+	<!-- Grid de tarjetas -->
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
 		<!-- Tarjeta 1 -->
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/clinic.jpg" alt="clínicas" class="w-[336px] h-[448px]" />
+				<img src="/img/types/clinic.jpg" alt="clínicas" class="w-full h-[448px] object-cover" />
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Pisos de clínicas</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -28,14 +28,13 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<!-- Tarjeta 2 -->
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/industry.jpg" alt="bodegas" class="w-[336px] h-[448px]" />
+				<img src="/img/types/industry.jpg" alt="bodegas" class="w-full h-[448px] object-cover" />
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Pisos de bodegas</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -48,14 +47,13 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<!-- Tarjeta 3 -->
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/pitch.jpg" alt="canchas" class="w-[336px] h-[448px]" />
+				<img src="/img/types/pitch.jpg" alt="canchas" class="w-full h-[448px] object-cover" />
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Canchas deportivas</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -68,14 +66,13 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<!-- Tarjeta 4 -->
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/house.webp" alt="viviendas" class="w-[336px] h-[448px]" />
+				<img src="/img/types/house.webp" alt="viviendas" class="w-full h-[448px] object-cover" />
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Vivienda</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -88,14 +85,13 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<!-- Tarjeta 5 -->
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/wall.jpg" alt="paredes" class="w-[336px] h-[448px]" />
+				<img src="/img/types/wall.jpg" alt="paredes" class="w-full h-[448px] object-cover" />
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Paredes</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -108,14 +104,17 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 image-full w-96 shadow-sm">
+		<!-- Tarjeta 6 -->
+		<div class="card bg-base-100 image-full w-full max-w-[336px] shadow-sm">
 			<figure>
-				<img src="/img/types/restaurant.webp" alt="restaurantes" class="w-[336px] h-[448px]" />
+				<img
+					src="/img/types/restaurant.webp"
+					alt="restaurantes"
+					class="w-full h-[448px] object-cover"
+				/>
 			</figure>
 			<div class="card-body flex flex-col">
 				<h2 class="card-title">Restaurantes grado alimenticio</h2>
-
-				<!-- Botón alineado abajo a la derecha -->
 				<div class="card-actions mt-auto justify-end">
 					<a
 						class="btn bg-[#0f3a5d] hover:bg-[#0d314e] text-white"
@@ -129,32 +128,28 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 py-8">
-		<h1 class="text-3xl font-bold text-[#1b68a9] text-center md:text-left">
-			Avalados por el Ministerio de Salud Pública y Asistencia Social -MSPAS-
-		</h1>
-		<img src="/img/mspas.png" alt="MSPAS" class="h-[60px]" />
-	</div>
+	<!-- Sección de avales -->
+	<div class="flex flex-col items-center justify-center gap-6 py-8">
+		<div class="text-center">
+			<h1 class="text-3xl font-bold text-[#1b68a9] mb-4">
+				Avalados por el Ministerio de Salud Pública y Asistencia Social -MSPAS-
+			</h1>
+			<img src="/img/mspas.png" alt="MSPAS" class="h-[60px] mx-auto" />
+		</div>
 
-	<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 py-8">
-		<h1 class="text-3xl font-bold text-[#1b68a9] text-center md:text-left">
-			Avalados por la Cámara de Construcción
-		</h1>
-		<img src="/img/camara.jpg" alt="Cámara de Construcción" class="h-[60px]" />
+		<div class="text-center">
+			<h1 class="text-3xl font-bold text-[#1b68a9] mb-4">Avalados por la Cámara de Construcción</h1>
+			<img src="/img/camara.jpg" alt="Cámara de Construcción" class="h-[60px] mx-auto" />
+		</div>
 	</div>
 </div>
 
-<div
-	class="bg-[#1b68a9] text-white px-10 py-12 flex flex-col md:flex-row items-center md:items-start gap-8 rounded-md w-full"
->
-	<!-- Izquierda -->
-	<div class="md:w-1/3 text-center md:text-left text-4xl font-semibold leading-relaxed">
-		<h1>Higieniza tus áreas con nosotros</h1>
-	</div>
-
-	<!-- Derecha -->
-	<div class="md:w-2/3">
-		<p class="mb-6 text-base md:text-lg leading-relaxed">
+<!-- Sección azul con texto + botón -->
+<div class="bg-[#1b68a9] text-white px-10 py-12 flex flex-col items-center gap-8 rounded-md w-full">
+	<!-- Texto -->
+	<div class="text-center md:text-left max-w-3xl">
+		<h1 class="text-4xl font-semibold mb-6">Higieniza tus áreas con nosotros</h1>
+		<p class="text-base md:text-lg leading-relaxed mb-6">
 			Somos expertos en la aplicación de resina epóxica de grado quirúrgico e industrial en una gran
 			cantidad de superficies como pisos de clínicas, pisos de bodegas, canchas, paredes, tops y
 			muchos otros servicios.
@@ -167,8 +162,12 @@
 			Obtén una cotización
 		</a>
 	</div>
+
+	<!-- Imagen opcional al final si quieres -->
+	<img src="/img/arqui-epoxy.png" alt="Arqui-Epoxy Guatemala" class="h-40 w-auto" />
 </div>
 
+<!-- Sección final -->
 <div class="px-8 py-10">
 	<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los expertos!</h1>
 </div>

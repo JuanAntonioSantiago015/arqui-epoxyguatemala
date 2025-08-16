@@ -6,10 +6,17 @@
 <div class="px-8 py-10">
 	<h1 class="text-4xl font-bold mb-8 text-center py-16">¿Quiénes somos?</h1>
 </div>
+
+<div class="bg-[#1b68a9] text-white flex flex-col items-center gap-8 rounded-md w-full">
+	<img src="/img/arqui-epoxy.png" alt="Arqui-Epoxy Guatemala" class="h-[250px]" />
+	<!-- Aquí puedes agregar más contenido centrado si quieres -->
+</div>
+
 <div
 	class="bg-[#1b68a9] text-white px-10 py-12 flex flex-col md:flex-row items-center md:items-start gap-8 rounded-md w-full"
 >
 	<!-- Izquierda -->
+
 	<div class="flex items-center justify-center h-64">
 		<!-- altura ejemplo 16rem -->
 		<div class="text-center text-4xl font-semibold leading-relaxed">

@@ -120,7 +120,3 @@
 		</p>
 	</div>
 </div>
-
-<div class="px-8 py-10">
-	<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los expertos!</h1>
-</div>

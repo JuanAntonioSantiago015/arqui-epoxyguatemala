@@ -88,6 +88,10 @@
 		<slot />
 	</main>
 
+	<div class="px-8 py-10">
+		<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los Expertos!</h1>
+	</div>
+
 	<footer class="bg-[#a0b7d0] text-black p-10">
 		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
 			<!-- Columna 1: Imagen + texto -->

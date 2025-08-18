@@ -4,7 +4,7 @@
 </script>
 
 <div class="px-8 py-10">
-	<h1 class="text-4xl font-bold mb-8 text-center py-16">¿Qué necesitas cotizar hoy?</h1>
+	<h1 class="text-4xl font-bold mb-8 text-center py-16">¿Qué Necesitas Cotizar Hoy?</h1>
 
 	<!-- Grid de tarjetas -->
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
@@ -167,6 +167,4 @@
 	</div>
 </div>
 
-<div class="px-8 py-10">
-	<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los expertos!</h1>
-</div>
+

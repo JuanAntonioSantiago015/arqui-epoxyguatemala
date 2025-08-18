@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { pageTitle } from '$lib/stores/pageTitle';
-	pageTitle.set('Limpieza y estilo para cada espacio');
+	pageTitle.set('Limpieza y Estilo Para Cada Espacio');
 </script>
 
 <div class="px-8 py-10">
@@ -50,7 +50,7 @@
 	</div>
 
 	<h1 class="text-4xl font-bold mb-8 text-center py-16">
-		Aplicación de resina epóxica grado quirúrgico e industrial en:
+		Aplicación de Resina Epóxica Grado Quirúrgico e Industrial En:
 	</h1>
 
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
@@ -109,7 +109,7 @@
 		<!-- Encabezado -->
 		<div class="text-center mb-10">
 			<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1b68a9]">
-				Resina epóxica vrs. Pintura epóxica
+				Resina Epóxica vrs. Pintura Epóxica
 			</h2>
 			<p class="mt-3 text-gray-600">
 				Comparación visual de desempeño en aplicaciones de pisos y recubrimientos.
@@ -193,7 +193,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[92%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -203,7 +203,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[90%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -213,7 +213,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[95%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -223,7 +223,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[92%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -233,7 +233,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[93%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -243,7 +243,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[95%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -253,7 +253,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[95%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
@@ -263,7 +263,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[95%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 						<p class="mt-1 text-xs text-gray-500">
 							Curado típico 24–48 h (uso ligero), 5–7 días (químicos pesados).
@@ -341,11 +341,11 @@
 					<div>
 						<div class="flex items-center justify-between mb-1">
 							<span class="text-gray-700">Fácil limpieza</span><span class="font-semibold"
-								>★★★☆☆</span
+								>★★☆☆☆</span
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[62%] bg-gray-400"></div>
+							<div class="h-full w-[20%] bg-gray-400"></div>
 						</div>
 					</div>
 					<div>

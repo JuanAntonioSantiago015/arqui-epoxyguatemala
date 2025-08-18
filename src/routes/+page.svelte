@@ -4,22 +4,24 @@
 </script>
 
 <div class="px-8 py-10">
-	<div class="carousel w-1250 h-[650px]">
-		<div id="slide1" class="carousel-item relative w-full">
-			<video class="w-full" controls loop playsinline>
+	<div class="carousel w-full h-[300px] md:h-[650px]">
+		<!-- Slide 1 - Video -->
+		<div id="slide1" class="carousel-item relative w-full flex justify-center items-center">
+			<video class="w-full h-full object-contain bg-black" controls loop playsinline>
 				<source src="/img/Vídeo sin título ‐ Hecho con Clipchamp (21).mp4" type="video/mp4" />
 				Tu navegador no soporta el elemento de video.
 			</video>
-
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide4" class="btn btn-circle">❮</a>
 				<a href="#slide2" class="btn btn-circle">❯</a>
 			</div>
 		</div>
+
+		<!-- Slide 2 -->
 		<div id="slide2" class="carousel-item relative w-full">
 			<img
 				src="/img/529480711_742973968491535_3701260859366488048_n.jpg"
-				class="w-full"
+				class="w-full h-full object-cover"
 				alt="portada"
 			/>
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -27,15 +29,19 @@
 				<a href="#slide3" class="btn btn-circle">❯</a>
 			</div>
 		</div>
+
+		<!-- Slide 3 -->
 		<div id="slide3" class="carousel-item relative w-full">
-			<img src="/img/001.jpg" class="w-full" alt="portada" />
+			<img src="/img/001.jpg" class="w-full h-full object-cover" alt="portada" />
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide2" class="btn btn-circle">❮</a>
 				<a href="#slide4" class="btn btn-circle">❯</a>
 			</div>
 		</div>
+
+		<!-- Slide 4 -->
 		<div id="slide4" class="carousel-item relative w-full">
-			<img src="/img/cr.jpg" class="w-full" alt="portada" />
+			<img src="/img/cr.jpg" class="w-full h-full object-cover" alt="portada" />
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide3" class="btn btn-circle">❮</a>
 				<a href="#slide1" class="btn btn-circle">❯</a>
@@ -103,7 +109,7 @@
 		<!-- Encabezado -->
 		<div class="text-center mb-10">
 			<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1b68a9]">
-				Resina epóxica vs Pintura epóxica
+				Resina epóxica vrs. Pintura epóxica
 			</h2>
 			<p class="mt-3 text-gray-600">
 				Comparación visual de desempeño en aplicaciones de pisos y recubrimientos.
@@ -243,21 +249,21 @@
 					<div>
 						<div class="flex items-center justify-between mb-1">
 							<span class="text-gray-700">Reparabilidad</span><span
-								class="font-semibold text-emerald-700">★★★★☆</span
+								class="font-semibold text-emerald-700">★★★★★</span
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[85%] bg-emerald-500"></div>
+							<div class="h-full w-[95%] bg-emerald-500"></div>
 						</div>
 					</div>
 					<div>
 						<div class="flex items-center justify-between mb-1">
 							<span class="text-gray-700">Tiempo de servicio*</span><span
-								class="font-semibold text-emerald-700">★★★☆☆</span
+								class="font-semibold text-emerald-700">★★★★★</span
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[60%] bg-emerald-500"></div>
+							<div class="h-full w-[95%] bg-emerald-500"></div>
 						</div>
 						<p class="mt-1 text-xs text-gray-500">
 							Curado típico 24–48 h (uso ligero), 5–7 días (químicos pesados).
@@ -270,7 +276,7 @@
 							>
 						</div>
 						<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
-							<div class="h-full w-[90%] bg-emerald-500"></div>
+							<div class="h-full w-[100%] bg-emerald-500"></div>
 						</div>
 						<p class="mt-1 text-xs text-gray-500">
 							Mayor inversión inicial, menor costo a largo plazo.

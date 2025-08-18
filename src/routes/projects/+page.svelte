@@ -3,12 +3,6 @@
 	pageTitle.set('Proyectos');
 </script>
 
-<style>
-	.carousel {
-		overflow-y: hidden !important;
-	}
-</style>
-
 <div class="px-8 py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 		<!-- Tarjeta 1 -->
@@ -492,6 +486,34 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="flex items-center justify-center py-8">
+		<h1 class="flex items-center gap-2 text-3xl font-bold text-[#1b68a9]">
+			Encuentra todos nuestros proyectos en
+			<a
+				href="https://www.facebook.com/share/1AzZebobfV/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="flex items-center gap-2 text-blue-600 hover:text-blue-800"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					fill="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"
+					/>
+				</svg>
+				Arqui-Epoxy Guatemala
+			</a>
+		</h1>
+	</div>
 </div>
 
-
+<style>
+	.carousel {
+		overflow-y: hidden !important;
+	}
+</style>

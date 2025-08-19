@@ -4,6 +4,11 @@
 </script>
 
 <div class="px-8 py-10">
+	<div class="flex items-center justify-center py-8">
+		<h1 class="flex items-center gap-2 text-3xl font-bold text-white">
+			Algunos de nuestros proyectos son:
+		</h1>
+	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 		<!-- Tarjeta 1 -->
 		<div class="card bg-base-100 shadow-sm">

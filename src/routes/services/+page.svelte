@@ -153,9 +153,9 @@
 	<!-- Derecha -->
 	<div class="md:w-2/3">
 		<p class="mb-6 text-base md:text-lg leading-relaxed">
-			Somos expertos en la aplicación de resina epóxica de grado quirúrgico e industrial en una gran
-			cantidad de superficies como pisos de clínicas, pisos de bodegas, canchas, paredes, tops y
-			muchos otros servicios.
+			Somos expertos en la aplicación de resina epóxica de grado quirúrgico, industrial, alimenticio
+			y artesanal en una gran cantidad de superficies como pisos de clínicas, pisos de bodegas,
+			canchas, paredes, tops y muchos otros servicios.
 		</p>
 		<a
 			href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
@@ -166,5 +166,3 @@
 		</a>
 	</div>
 </div>
-
-

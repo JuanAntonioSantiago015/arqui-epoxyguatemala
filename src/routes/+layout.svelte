@@ -7,6 +7,14 @@
 <svelte:head>
 	<link rel="icon" href="/img/arqui-epoxy.png" />
 	<title>Arqui-Epoxy Guatemala</title>
+	<meta
+		name="description"
+		content="Especialistas en pisos epóxicos, resinas y recubrimientos industriales en Guatemala. Calidad, durabilidad y diseño para tus proyectos."
+	/>
+	<meta
+		name="keywords"
+		content="epóxico Guatemala, pisos epóxicos, resinas, recubrimientos industriales, Arqui-Epoxy"
+	/>
 </svelte:head>
 
 <div class="flex flex-col min-h-screen">

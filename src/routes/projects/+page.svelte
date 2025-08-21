@@ -89,6 +89,67 @@
 			</div>
 		</div>
 
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<div class="carousel w-full h-[448px]">
+					<div
+						id="slide9-1"
+						class="carousel-item relative w-full h-full flex justify-center items-center"
+					>
+						<img src="/img/Salvador/000.jpg" class="scale-75 object-cover" />
+						<div
+							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+						>
+							1 / 3
+						</div>
+						<a href="#slide9-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
+						>
+						<a href="#slide9-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
+							>❯</a
+						>
+					</div>
+
+					<div
+						id="slide9-2"
+						class="carousel-item relative w-full h-full flex justify-center items-center"
+					>
+						<img src="/img/Salvador/001.jpg" class="scale-75 object-cover" />
+						<div
+							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+						>
+							2 / 3
+						</div>
+						<a href="#slide9-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
+						>
+						<a href="#slide9-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
+							>❯</a
+						>
+					</div>
+
+					<div
+						id="slide9-3"
+						class="carousel-item relative w-full h-full flex justify-center items-center"
+					>
+						<img src="/img/Salvador/002.jpg" class="scale-75 object-cover" />
+						<div
+							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+						>
+							3 / 3
+						</div>
+						<a href="#slide9-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
+						>
+						<a href="#slide9-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
+							>❯</a
+						>
+					</div>
+				</div>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-center text-2xl font-bold mb-4">El Salvador, Centro América</h2>
+				<p>Agosto de 2024</p>
+			</div>
+		</div>
+
 		<!-- Tarjeta 5 -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
@@ -491,67 +552,52 @@
 			</div>
 		</div>
 
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide7-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Jalapa/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 3
-							<a href="#slide7-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2"
-								>❮</a
-							>
-							<a href="#slide7-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-								>❯</a
-							>
-						</div>
-						<div
-							id="slide7-2"
-							class="carousel-item relative w-full h-full flex justify-center items-center"
-						>
-							<img src="/img/Jalapa/001.jpg" class="scale-75 object-cover" />
-							<div
-								class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-							>
-								2 / 3
-							</div>
-							<a href="#slide7-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2"
-								>❮</a
-							>
-							<a href="#slide7-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-								>❯</a
-							>
-						</div>
-						<div
-							id="slide7-3"
-							class="carousel-item relative w-full h-full flex justify-center items-center"
-						>
-							<img src="/img/Jalapa/002.jpg" class="scale-75 object-cover" />
-							<div
-								class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-							>
-								3 / 3
-							</div>
-							<a href="#slide7-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2"
-								>❮</a
-							>
-							<a href="#slide7-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-								>❯</a
-							>
-						</div>
-					</div>
+		<div class="carousel w-full h-[448px]">
+			<!-- Slide 1 -->
+			<div
+				id="slide7-1"
+				class="carousel-item relative w-full h-full flex justify-center items-center"
+			>
+				<img src="/img/Jalapa/000.jpg" class="scale-75 object-cover" />
+				<div
+					class="absolute bottom-4 left-1/2 transform -translate-x-1/2
+		            bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+				>
+					1 / 3
 				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">
-					Clínica de la Diabetes e hipertensión, Jalapa
-				</h2>
-				<p>Agosto de 2025</p>
+				<a href="#slide7-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
+				<a href="#slide7-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
+			</div>
+
+			<!-- Slide 2 -->
+			<div
+				id="slide7-2"
+				class="carousel-item relative w-full h-full flex justify-center items-center"
+			>
+				<img src="/img/Jalapa/001.jpg" class="scale-75 object-cover" />
+				<div
+					class="absolute bottom-4 left-1/2 transform -translate-x-1/2
+		            bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+				>
+					2 / 3
+				</div>
+				<a href="#slide7-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
+				<a href="#slide7-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
+			</div>
+
+			<!-- Slide 3 -->
+			<div
+				id="slide7-3"
+				class="carousel-item relative w-full h-full flex justify-center items-center"
+			>
+				<img src="/img/Jalapa/002.jpg" class="scale-75 object-cover" />
+				<div
+					class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
+				>
+					3 / 3
+				</div>
+				<a href="#slide7-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
+				<a href="#slide7-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
 			</div>
 		</div>
 

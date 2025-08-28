@@ -11,7 +11,7 @@
 
     <!-- Servicios -->
     <url>
-        <loc>https://www.arqui-epoxy.com/services</loc>
+        <loc>https://www.arqui-epoxyguatemala.com/services</loc>
         <lastmod>2025-08-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
     <!-- Proyectos -->
     <url>
-        <loc>https://www.arqui-epoxy.com/projects</loc>
+        <loc>https://www.arqui-epoxyguatemala.com/projects</loc>
         <lastmod>2025-08-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
     <!-- Nosotros -->
     <url>
-        <loc>https://www.arqui-epoxy.com/about</loc>
+        <loc>https://www.arqui-epoxyguatemala.com/about</loc>
         <lastmod>2025-08-28</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>

@@ -1,6 +1,103 @@
 <script lang="ts">
 	import { pageTitle } from '$lib/stores/pageTitle';
+	import Carousel from '$lib/components/Carousel.svelte';
 	pageTitle.set('Proyectos');
+
+	type Proyecto = {
+		nombre: string;
+		fecha: string;
+		fotos: string[];
+	};
+
+	const proyectos: Proyecto[] = [
+		{
+			nombre: 'Herrera Llerandi',
+			fecha: 'Septiembre de 2023',
+			fotos: [
+				'/img/Herrera Llerandi/000.jpg',
+				'/img/Herrera Llerandi/00.jpg',
+				'/img/Herrera Llerandi/01.jpg',
+				'/img/Herrera Llerandi/02.jpg'
+			]
+		},
+		{
+			nombre: 'El Salvador, Centro América',
+			fecha: 'Agosto de 2024',
+			fotos: ['/img/Salvador/000.jpg', '/img/Salvador/001.jpg', '/img/Salvador/002.jpg']
+		},
+		{
+			nombre: 'Centro Médico Integral El Rosario',
+			fecha: 'Septiembre de 2024',
+			fotos: [
+				'/img/ElRosario/000.jpg',
+				'/img/ElRosario/00.jpg',
+				'/img/ElRosario/01.jpg',
+				'/img/ElRosario/02.jpg',
+				'/img/ElRosario/03.jpg',
+				'/img/ElRosario/04.jpg'
+			]
+		},
+		{
+			nombre: 'Nuestra Señora de Guadalupe',
+			fecha: 'Diciembre de 2024',
+			fotos: [
+				'/img/Nuestra Se;ora de Guadalupe/00.jpg',
+				'/img/Nuestra Se;ora de Guadalupe/01.jpg',
+				'/img/Nuestra Se;ora de Guadalupe/02.jpg',
+				'/img/Nuestra Se;ora de Guadalupe/03.jpg',
+				'/img/Nuestra Se;ora de Guadalupe/04.jpg'
+			]
+		},
+		{
+			nombre: 'San José Costa Rica',
+			fecha: 'Diciembre de 2024',
+			fotos: ['/img/cr0.jpg', '/img/cr.jpg']
+		},
+		{
+			nombre: 'Hospital San José Moscati',
+			fecha: 'Marzo de 2025',
+			fotos: [
+				'/img/Moscati/000.jpg',
+				'/img/Moscati/00.jpg',
+				'/img/Moscati/01.jpg',
+				'/img/Moscati/02.jpg',
+				'/img/Moscati/03.jpg',
+				'/img/Moscati/04.jpg',
+				'/img/Moscati/05.jpg',
+				'/img/Moscati/07.jpg'
+			]
+		},
+		{
+			nombre: 'Jalapa',
+			fecha: 'Agosto de 2025',
+			fotos: ['/img/Jalapa/000.jpg', '/img/Jalapa/001.jpg', '/img/Jalapa/002.jpg']
+		},
+		{
+			nombre: 'Zona Médica Zona 9',
+			fecha: 'Agosto de 2025',
+			fotos: [
+				'/img/ZonaMedica/000.jpg',
+				'/img/ZonaMedica/001.jpg',
+				'/img/ZonaMedica/002.jpg',
+				'/img/ZonaMedica/003.jpg',
+				'/img/ZonaMedica/004.jpg',
+				'/img/ZonaMedica/005.jpg',
+				'/img/ZonaMedica/006.jpg',
+				'/img/ZonaMedica/007.jpg',
+				'/img/ZonaMedica/008.jpg'
+			]
+		},
+		{
+			nombre: 'Blood Sweat Body Work',
+			fecha: 'Panamá',
+			fotos: [
+				'/img/Panama/003.jpg',
+				'/img/Panama/000.jpg',
+				'/img/Panama/001.jpg',
+				'/img/Panama/002.jpg'
+			]
+		}
+	];
 </script>
 
 <div class="px-8 py-10">
@@ -9,759 +106,19 @@
 			Algunos de nuestros proyectos son:
 		</h1>
 	</div>
+
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-		<!-- Tarjeta 1 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide1-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Herrera Llerandi/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 4
-						</div>
-						<a href="#slide1-4" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide1-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide1-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Herrera Llerandi/00.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 4
-						</div>
-						<a href="#slide1-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide1-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide1-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Herrera Llerandi/01.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 4
-						</div>
-						<a href="#slide1-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide1-4" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide1-4"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Herrera Llerandi/02.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							4 / 4
-						</div>
-						<a href="#slide1-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide1-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
+		{#each proyectos as proyecto, idx}
+			<div class="card bg-base-100 shadow-sm">
+				<figure>
+					<Carousel fotos={proyecto.fotos} id={String(idx)} />
+				</figure>
+				<div class="card-body text-center">
+					<h2 class="text-center text-2xl font-bold mb-4">{proyecto.nombre}</h2>
+					<p>{proyecto.fecha}</p>
 				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">Herrera Llerandi</h2>
-				<p>Septiembre de 2023</p>
 			</div>
-		</div>
-
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide9-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Salvador/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 3
-						</div>
-						<a href="#slide9-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide9-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide9-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Salvador/001.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 3
-						</div>
-						<a href="#slide9-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide9-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide9-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Salvador/002.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 3
-						</div>
-						<a href="#slide9-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide9-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">El Salvador, Centro América</h2>
-				<p>Agosto de 2024</p>
-			</div>
-		</div>
-
-		<!-- Tarjeta 5 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide5-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 6
-						</div>
-						<a href="#slide5-6" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide5-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/00.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 6
-						</div>
-						<a href="#slide5-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide5-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/01.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 6
-						</div>
-						<a href="#slide5-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-4" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide5-4"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/02.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							4 / 6
-						</div>
-						<a href="#slide5-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-5" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide5-5"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/03.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							5 / 6
-						</div>
-						<a href="#slide5-4" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-6" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide5-6"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ElRosario/04.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							6 / 6
-						</div>
-						<a href="#slide5-5" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide5-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">Centro Médico Integral El Rosario</h2>
-				<p>Septiembre de 2024</p>
-			</div>
-		</div>
-
-		<!-- Tarjeta 3 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide3-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Nuestra Se;ora de Guadalupe/00.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 5
-						</div>
-						<a href="#slide3-5" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide3-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide3-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Nuestra Se;ora de Guadalupe/01.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 5
-						</div>
-						<a href="#slide3-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide3-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide3-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Nuestra Se;ora de Guadalupe/02.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 5
-						</div>
-						<a href="#slide3-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide3-4" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide3-4"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Nuestra Se;ora de Guadalupe/03.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							4 / 5
-						</div>
-						<a href="#slide3-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide3-5" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide3-5"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Nuestra Se;ora de Guadalupe/04.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							5 / 5
-						</div>
-						<a href="#slide3-4" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide3-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">Nuestra Señora de Guadalupe</h2>
-				<p>Diciembre de 2024</p>
-			</div>
-		</div>
-
-		<!-- Tarjeta 4 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide4-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/cr0.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 2
-						</div>
-						<a href="#slide4-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide4-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide4-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/cr.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 2
-						</div>
-						<a href="#slide4-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide4-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">San José Costa Rica</h2>
-				<p>Diciembre de 2024</p>
-			</div>
-		</div>
-
-		<!-- Tarjeta 2 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide2-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 8
-						</div>
-						<a href="#slide2-8" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide2-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/00.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 8
-						</div>
-						<a href="#slide2-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 3 -->
-					<div
-						id="slide2-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/01.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 8
-						</div>
-						<a href="#slide2-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-4" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 4 -->
-					<div
-						id="slide2-4"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/02.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							4 / 8
-						</div>
-						<a href="#slide2-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-5" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 5 -->
-					<div
-						id="slide2-5"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/03.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							5 / 8
-						</div>
-						<a href="#slide2-4" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-6" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 6 -->
-					<div
-						id="slide2-6"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/04.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							6 / 8
-						</div>
-						<a href="#slide2-5" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-7" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 7 -->
-					<div
-						id="slide2-7"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/05.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							7 / 8
-						</div>
-						<a href="#slide2-6" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-8" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<!-- Slide 8 -->
-					<div
-						id="slide2-8"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/Moscati/07.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							8 / 8
-						</div>
-						<a href="#slide2-7" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide2-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">Hospital San José Moscati</h2>
-				<p>Marzo de 2025</p>
-			</div>
-		</div>
-
-		<div class="carousel w-full h-[448px]">
-			<!-- Slide 1 -->
-			<div
-				id="slide7-1"
-				class="carousel-item relative w-full h-full flex justify-center items-center"
-			>
-				<img src="/img/Jalapa/000.jpg" class="scale-75 object-cover" />
-				<div
-					class="absolute bottom-4 left-1/2 transform -translate-x-1/2
-		            bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-				>
-					1 / 3
-				</div>
-				<a href="#slide7-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
-				<a href="#slide7-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
-			</div>
-
-			<!-- Slide 2 -->
-			<div
-				id="slide7-2"
-				class="carousel-item relative w-full h-full flex justify-center items-center"
-			>
-				<img src="/img/Jalapa/001.jpg" class="scale-75 object-cover" />
-				<div
-					class="absolute bottom-4 left-1/2 transform -translate-x-1/2
-		            bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-				>
-					2 / 3
-				</div>
-				<a href="#slide7-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
-				<a href="#slide7-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
-			</div>
-
-			<!-- Slide 3 -->
-			<div
-				id="slide7-3"
-				class="carousel-item relative w-full h-full flex justify-center items-center"
-			>
-				<img src="/img/Jalapa/002.jpg" class="scale-75 object-cover" />
-				<div
-					class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-				>
-					3 / 3
-				</div>
-				<a href="#slide7-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a>
-				<a href="#slide7-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2">❯</a>
-			</div>
-		</div>
-
-		<!-- Tarjeta 4 -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<div class="carousel w-full h-[448px]">
-					<div
-						id="slide6-1"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/000.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							1 / 9
-						</div>
-						<a href="#slide6-9" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-2" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide6-2"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/001.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							2 / 9
-						</div>
-						<a href="#slide6-1" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-3" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-					<div
-						id="slide6-3"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/002.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							3 / 9
-						</div>
-						<a href="#slide6-2" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-4" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-4"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/003.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							4 / 9
-						</div>
-						<a href="#slide6-3" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-5" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-5"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/004.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							5 / 9
-						</div>
-						<a href="#slide6-4" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-6" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-6"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/005.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							6 / 9
-						</div>
-						<a href="#slide6-5" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-7" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-7"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/006.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							7 / 9
-						</div>
-						<a href="#slide6-6" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-8" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-8"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/007.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							8 / 9
-						</div>
-						<a href="#slide6-7" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-9" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-
-					<div
-						id="slide6-9"
-						class="carousel-item relative w-full h-full flex justify-center items-center"
-					>
-						<img src="/img/ZonaMedica/008.jpg" class="scale-75 object-cover" />
-						<div
-							class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-3 py-1 rounded-lg text-sm"
-						>
-							9 / 9
-						</div>
-						<a href="#slide6-8" class="btn btn-circle absolute left-2 top-1/2 -translate-y-1/2">❮</a
-						>
-						<a href="#slide6-1" class="btn btn-circle absolute right-2 top-1/2 -translate-y-1/2"
-							>❯</a
-						>
-					</div>
-				</div>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-center text-2xl font-bold mb-4">Zona Médica Zona 9</h2>
-				<p>Agosto de 2025</p>
-			</div>
-		</div>
+		{/each}
 	</div>
 
 	<div class="flex items-center justify-center py-8">
@@ -788,9 +145,3 @@
 		</h1>
 	</div>
 </div>
-
-<style>
-	.carousel {
-		overflow-y: hidden !important;
-	}
-</style>

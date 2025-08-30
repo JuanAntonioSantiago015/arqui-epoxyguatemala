@@ -96,7 +96,27 @@
 				'/img/Panama/001.jpg',
 				'/img/Panama/002.jpg'
 			]
-		}
+		},
+		{
+			nombre: 'Cayalá',
+			fecha: 'Guatemala',
+			fotos: [
+				'/img/Cayala/000.jpg',
+				'/img/Cayala/001.jpg',
+				'/img/Cayala/002.jpg',
+				'/img/Cayala/003.jpg'
+			]
+		},
+		{
+			nombre: 'Flores',
+			fecha: 'Petén',
+			fotos: [
+				'/img/Flores/000.jpg',
+				'/img/Flores/001.jpg',
+				'/img/Flores/002.jpg',
+				'/img/Flores/003.jpg'
+			]
+		},
 	];
 </script>
 

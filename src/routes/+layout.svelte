@@ -2,6 +2,9 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	import { pageTitle } from '$lib/stores/pageTitle';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+	injectAnalytics();
 </script>
 
 <svelte:head>

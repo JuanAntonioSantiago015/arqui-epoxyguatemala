@@ -12,7 +12,7 @@
 	const proyectos: Proyecto[] = [
 		{
 			nombre: 'Herrera Llerandi',
-			fecha: 'Septiembre de 2023',
+			fecha: 'Septiembre de 2015',
 			fotos: [
 				'/img/Herrera Llerandi/000.jpg',
 				'/img/Herrera Llerandi/00.jpg',
@@ -27,7 +27,7 @@
 		},
 		{
 			nombre: 'Centro Médico Integral El Rosario',
-			fecha: 'Septiembre de 2024',
+			fecha: 'Septiembre de 2022',
 			fotos: [
 				'/img/ElRosario/000.jpg',
 				'/img/ElRosario/00.jpg',
@@ -39,7 +39,7 @@
 		},
 		{
 			nombre: 'Nuestra Señora de Guadalupe',
-			fecha: 'Diciembre de 2024',
+			fecha: 'Diciembre de 2021',
 			fotos: [
 				'/img/Nuestra Se;ora de Guadalupe/00.jpg',
 				'/img/Nuestra Se;ora de Guadalupe/01.jpg',
@@ -50,7 +50,7 @@
 		},
 		{
 			nombre: 'San José Costa Rica',
-			fecha: 'Diciembre de 2024',
+			fecha: 'Diciembre de 2023',
 			fotos: ['/img/cr0.jpg', '/img/cr.jpg']
 		},
 		{
@@ -115,6 +115,22 @@
 				'/img/Flores/001.jpg',
 				'/img/Flores/002.jpg',
 				'/img/Flores/003.jpg'
+			]
+		},
+		{
+			nombre: 'San Antonio Abad',
+			fecha: 'San Salvador, El Salvador',
+			fotos: ['/img/depSalvador/000.jpg', '/img/depSalvador/001.jpg', '/img/depSalvador/002.jpg']
+		},
+		{
+			nombre: 'Banco de Alimentos',
+			fecha: 'Guatemala',
+			fotos: [
+				'/img/bancoAlimentos/000.jpg',
+				'/img/bancoAlimentos/001.jpg',
+				'/img/bancoAlimentos/002.jpg',
+				'/img/bancoAlimentos/003.jpg',
+				'/img/bancoAlimentos/004.jpg'
 			]
 		},
 	];

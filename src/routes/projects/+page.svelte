@@ -27,7 +27,7 @@
 		},
 		{
 			nombre: 'Centro Médico Integral El Rosario',
-			fecha: 'Septiembre de 2022',
+			fecha: 'Septiembre de 2016',
 			fotos: [
 				'/img/ElRosario/000.jpg',
 				'/img/ElRosario/00.jpg',
@@ -132,7 +132,7 @@
 				'/img/bancoAlimentos/003.jpg',
 				'/img/bancoAlimentos/004.jpg'
 			]
-		},
+		}
 	];
 </script>
 

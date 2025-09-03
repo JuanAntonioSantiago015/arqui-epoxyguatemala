@@ -11,8 +11,17 @@
 
 	const proyectos: Proyecto[] = [
 		{
+			nombre: 'Cancha Deportiva en Santa Rosa',
+			fecha: 'Santa Rosa, Guatemala',
+			fotos: [
+				'/img/Santa Rosa/000.jpg',
+				'/img/Santa Rosa/001.jpg',
+				'/img/Santa Rosa/002.jpg'
+			]
+		},
+		{
 			nombre: 'Herrera Llerandi',
-			fecha: 'Septiembre de 2015',
+			fecha: 'Ciudad de Guatemala, Guatemala',
 			fotos: [
 				'/img/Herrera Llerandi/000.jpg',
 				'/img/Herrera Llerandi/00.jpg',
@@ -21,13 +30,13 @@
 			]
 		},
 		{
-			nombre: 'El Salvador, Centro América',
-			fecha: 'Agosto de 2024',
+			nombre: 'El Salvador',
+			fecha: 'El Salvador, Centro América',
 			fotos: ['/img/Salvador/000.jpg', '/img/Salvador/001.jpg', '/img/Salvador/002.jpg']
 		},
 		{
 			nombre: 'Centro Médico Integral El Rosario',
-			fecha: 'Septiembre de 2016',
+			fecha: 'Coatepeque, Guatemala',
 			fotos: [
 				'/img/ElRosario/000.jpg',
 				'/img/ElRosario/00.jpg',
@@ -39,7 +48,7 @@
 		},
 		{
 			nombre: 'Nuestra Señora de Guadalupe',
-			fecha: 'Diciembre de 2021',
+			fecha: 'Mazatenango, Guatemala',
 			fotos: [
 				'/img/Nuestra Se;ora de Guadalupe/00.jpg',
 				'/img/Nuestra Se;ora de Guadalupe/01.jpg',
@@ -50,12 +59,12 @@
 		},
 		{
 			nombre: 'San José Costa Rica',
-			fecha: 'Diciembre de 2023',
+			fecha: 'Costa Rica, Centro América',
 			fotos: ['/img/cr0.jpg', '/img/cr.jpg']
 		},
 		{
 			nombre: 'Hospital San José Moscati',
-			fecha: 'Marzo de 2025',
+			fecha: 'San Marcos, Guatemala',
 			fotos: [
 				'/img/Moscati/000.jpg',
 				'/img/Moscati/00.jpg',
@@ -69,12 +78,12 @@
 		},
 		{
 			nombre: 'Jalapa',
-			fecha: 'Agosto de 2025',
+			fecha: 'Jalapa, Guatemala',
 			fotos: ['/img/Jalapa/000.jpg', '/img/Jalapa/001.jpg', '/img/Jalapa/002.jpg']
 		},
 		{
 			nombre: 'Zona Médica Zona 9',
-			fecha: 'Agosto de 2025',
+			fecha: 'Ciudad de Guatemala, Guatemala',
 			fotos: [
 				'/img/ZonaMedica/000.jpg',
 				'/img/ZonaMedica/001.jpg',
@@ -89,7 +98,7 @@
 		},
 		{
 			nombre: 'Blood Sweat Body Work',
-			fecha: 'Panamá',
+			fecha: 'Panamá, Centro América',
 			fotos: [
 				'/img/Panama/003.jpg',
 				'/img/Panama/000.jpg',
@@ -99,7 +108,7 @@
 		},
 		{
 			nombre: 'Cayalá',
-			fecha: 'Guatemala',
+			fecha: 'Ciudad de Guatemala, Guatemala',
 			fotos: [
 				'/img/Cayala/000.jpg',
 				'/img/Cayala/001.jpg',
@@ -109,7 +118,7 @@
 		},
 		{
 			nombre: 'Flores',
-			fecha: 'Petén',
+			fecha: 'Petén, Guatemala',
 			fotos: [
 				'/img/Flores/000.jpg',
 				'/img/Flores/001.jpg',
@@ -124,7 +133,7 @@
 		},
 		{
 			nombre: 'Banco de Alimentos',
-			fecha: 'Guatemala',
+			fecha: 'Ciudad de Guatemala, Guatemala',
 			fotos: [
 				'/img/bancoAlimentos/000.jpg',
 				'/img/bancoAlimentos/001.jpg',

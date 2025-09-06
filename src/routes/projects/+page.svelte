@@ -13,10 +13,24 @@
 		{
 			nombre: 'Cancha Deportiva en Santa Rosa',
 			fecha: 'Santa Rosa, Guatemala',
+			fotos: ['/img/Santa Rosa/000.jpg', '/img/Santa Rosa/001.jpg', '/img/Santa Rosa/002.jpg']
+		},
+		{
+			nombre: 'Hospital del Lago',
+			fecha: 'Sololá, Guatemala',
 			fotos: [
-				'/img/Santa Rosa/000.jpg',
-				'/img/Santa Rosa/001.jpg',
-				'/img/Santa Rosa/002.jpg'
+				'/img/Solola/000.jpg',
+				'/img/Solola/001.jpg',
+				'/img/Solola/002.jpg',
+				'/img/Solola/003.jpg',
+				'/img/Solola/004.jpg',
+				'/img/Solola/005.jpg',
+				'/img/Solola/006.jpg',
+				'/img/Solola/007.jpg',
+				'/img/Solola/008.jpg',
+				'/img/Solola/009.jpg',
+				'/img/Solola/010.jpg',
+				'/img/Solola/011.jpg'
 			]
 		},
 		{

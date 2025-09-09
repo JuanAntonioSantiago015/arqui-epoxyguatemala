@@ -72,6 +72,29 @@
 			]
 		},
 		{
+			nombre: 'Hospital Privado Los Eucaliptos',
+			fecha: 'Quetzaltenango, Guatemala',
+			fotos: [
+				'/img/LosEucaliptos/0000.jpg',
+				'/img/LosEucaliptos/000.jpg',
+				'/img/LosEucaliptos/001.jpg',
+				'/img/LosEucaliptos/002.jpg',
+				'/img/LosEucaliptos/003.jpg',
+				'/img/LosEucaliptos/004.jpg',
+				'/img/LosEucaliptos/005.jpg',
+				'/img/LosEucaliptos/006.jpg',
+				'/img/LosEucaliptos/007.jpg',
+				'/img/LosEucaliptos/008.jpg',
+				'/img/LosEucaliptos/009.jpg',
+				'/img/LosEucaliptos/010.jpg',
+				'/img/LosEucaliptos/011.jpg',
+				'/img/LosEucaliptos/012.jpg',
+				'/img/LosEucaliptos/013.jpg',
+				'/img/LosEucaliptos/014.jpg',
+				'/img/LosEucaliptos/015.jpg',
+			]
+		},
+		{
 			nombre: 'San José Costa Rica',
 			fecha: 'Costa Rica, Centro América',
 			fotos: ['/img/cr0.jpg', '/img/cr.jpg']

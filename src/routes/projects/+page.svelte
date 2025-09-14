@@ -154,6 +154,17 @@
 			]
 		},
 		{
+			nombre: 'Jutiapa',
+			fecha: 'Jutiapa, Guatemala',
+			fotos: [
+				'/img/JutiapaJutiapa/000.jpg',
+				'/img/JutiapaJutiapa/001.jpg',
+				'/img/JutiapaJutiapa/002.jpg',
+				'/img/JutiapaJutiapa/003.jpg',
+				'/img/JutiapaJutiapa/004.jpg'
+			]
+		},
+		{
 			nombre: 'Flores',
 			fecha: 'Petén, Guatemala',
 			fotos: [
@@ -167,6 +178,16 @@
 			nombre: 'San Antonio Abad',
 			fecha: 'San Salvador, El Salvador',
 			fotos: ['/img/depSalvador/000.jpg', '/img/depSalvador/001.jpg', '/img/depSalvador/002.jpg']
+		},
+		{
+			nombre: 'Jalapa',
+			fecha: 'Jalapa, Guatemala',
+			fotos: [
+				'/img/JalapaJalapa/000.jpg',
+				'/img/JalapaJalapa/001.jpg',
+				'/img/JalapaJalapa/002.jpg',
+				'/img/JalapaJalapa/003.jpg'
+			]
 		},
 		{
 			nombre: 'Banco de Alimentos',

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { pageTitle } from '$lib/stores/pageTitle';
 	import Carousel from '$lib/components/Carousel.svelte';
-	pageTitle.set('Proyectos');
+	pageTitle.set('PROYECTOS');
 
 	type Proyecto = {
 		nombre: string;
@@ -91,7 +91,7 @@
 				'/img/LosEucaliptos/012.jpg',
 				'/img/LosEucaliptos/013.jpg',
 				'/img/LosEucaliptos/014.jpg',
-				'/img/LosEucaliptos/015.jpg',
+				'/img/LosEucaliptos/015.jpg'
 			]
 		},
 		{
@@ -222,6 +222,18 @@
 				</div>
 			</div>
 		{/each}
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/peten.mp4" type="video/mp4" />
+					Tu navegador no soporta el video.
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Petén</h2>
+				<p>Petén, Guatemala</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="flex items-center justify-center py-8">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { pageTitle } from '$lib/stores/pageTitle';
-	pageTitle.set('Servicios');
+	pageTitle.set('SERVICIOS');
 </script>
 
 <div class="px-8 py-10">

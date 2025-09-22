@@ -16,6 +16,18 @@
 			fotos: ['/img/Santa Rosa/000.jpg', '/img/Santa Rosa/001.jpg', '/img/Santa Rosa/002.jpg']
 		},
 		{
+			nombre: 'Cancha Deportiva en San Salvador',
+			fecha: 'San Salvador, El Salvador',
+			fotos: [
+				'/img/SanSalvador/000.jpg',
+				'/img/SanSalvador/001.jpg',
+				'/img/SanSalvador/002.jpg',
+				'/img/SanSalvador/003.jpg',
+				'/img/SanSalvador/004.jpg',
+				'/img/SanSalvador/005.jpg'
+			]
+		},
+		{
 			nombre: 'Hospital del Lago',
 			fecha: 'Sololá, Guatemala',
 			fotos: [

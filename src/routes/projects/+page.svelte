@@ -28,6 +28,21 @@
 			]
 		},
 		{
+			nombre: 'Hospital Nueva Esperanza',
+			fecha: 'Sololá, Guatemala',
+			fotos: [
+				'/img/NuevaEsperanza/000.jpg',
+				'/img/NuevaEsperanza/001.jpg',
+				'/img/NuevaEsperanza/002.jpg',
+				'/img/NuevaEsperanza/003.jpg',
+				'/img/NuevaEsperanza/004.jpg',
+				'/img/NuevaEsperanza/005.jpg',
+				'/img/NuevaEsperanza/006.jpg',
+				'/img/NuevaEsperanza/007.jpg',
+				'/img/NuevaEsperanza/008.jpg',
+			]
+		},
+		{
 			nombre: 'Hospital del Lago',
 			fecha: 'Sololá, Guatemala',
 			fotos: [

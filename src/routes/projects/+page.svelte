@@ -28,6 +28,18 @@
 			]
 		},
 		{
+			nombre: 'Hospital Privado del Dr. Eugenio Gonzalez',
+			fecha: 'El Alto, Guatemala',
+			fotos: [
+				'/img/ElAlto/005.jpg',
+				'/img/ElAlto/001.jpg',
+				'/img/ElAlto/002.jpg',
+				'/img/ElAlto/003.jpg',
+				'/img/ElAlto/004.jpg',
+				'/img/ElAlto/000.jpg',
+			]
+		},
+		{
 			nombre: 'Hospital Nueva Esperanza',
 			fecha: 'Sololá, Guatemala',
 			fotos: [

@@ -16,6 +16,17 @@
 			fotos: ['/img/Santa Rosa/000.jpg', '/img/Santa Rosa/001.jpg', '/img/Santa Rosa/002.jpg']
 		},
 		{
+			nombre: 'Clínica de Traumatología',
+			fecha: 'Chiquimula, Guatemala',
+			fotos: [
+				'/img/Chiquimula/000.jpg',
+				'/img/Chiquimula/001.jpg',
+				'/img/Chiquimula/002.jpg',
+				'/img/Chiquimula/003.jpg',
+				'/img/Chiquimula/004.jpg'
+			]
+		},
+		{
 			nombre: 'Cancha Deportiva en San Salvador',
 			fecha: 'San Salvador, El Salvador',
 			fotos: [

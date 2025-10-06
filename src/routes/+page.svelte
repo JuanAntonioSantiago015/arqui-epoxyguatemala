@@ -18,12 +18,11 @@
 		</div>
 
 		<!-- Slide 2 -->
-		<div id="slide2" class="carousel-item relative w-full">
-			<img
-				src="/img/529480711_742973968491535_3701260859366488048_n.jpg"
-				class="w-full h-full object-cover"
-				alt="portada"
-			/>
+		<div id="slide2" class="carousel-item relative w-full flex justify-center items-center">
+			<video class="w-full h-full object-contain bg-black" controls loop playsinline>
+				<source src="/videos/quirofanos.mp4" type="video/mp4" />
+				Tu navegador no soporta el elemento de video.
+			</video>
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide1" class="btn btn-circle">❮</a>
 				<a href="#slide3" class="btn btn-circle">❯</a>
@@ -31,8 +30,11 @@
 		</div>
 
 		<!-- Slide 3 -->
-		<div id="slide3" class="carousel-item relative w-full">
-			<img src="/img/001.jpg" class="w-full h-full object-cover" alt="portada" />
+		<div id="slide3" class="carousel-item relative w-full flex justify-center items-center">
+			<video class="w-full h-full object-contain bg-black" controls loop playsinline>
+				<source src="/videos/bodega.mp4" type="video/mp4" />
+				Tu navegador no soporta el elemento de video.
+			</video>
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide2" class="btn btn-circle">❮</a>
 				<a href="#slide4" class="btn btn-circle">❯</a>
@@ -40,8 +42,11 @@
 		</div>
 
 		<!-- Slide 4 -->
-		<div id="slide4" class="carousel-item relative w-full">
-			<img src="/img/cr.jpg" class="w-full h-full object-cover" alt="portada" />
+		<div id="slide4" class="carousel-item relative w-full flex justify-center items-center">
+			<video class="w-full h-full object-contain bg-black" controls loop playsinline>
+				<source src="/videos/vivienda.mp4" type="video/mp4" />
+				Tu navegador no soporta el elemento de video.
+			</video>
 			<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
 				<a href="#slide3" class="btn btn-circle">❮</a>
 				<a href="#slide1" class="btn btn-circle">❯</a>

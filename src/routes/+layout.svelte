@@ -25,7 +25,7 @@
 		<!-- Imagen de fondo -->
 		<div
 			class="absolute inset-0 bg-center bg-no-repeat"
-			style="background-image: url('/img/portadav3.jpg'); background-size: cover;"
+			style="background-image: url('/img/ArquiEpoxy-Portada.jpg'); background-size: cover;"
 		></div>
 
 

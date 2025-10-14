@@ -28,6 +28,7 @@
 			style="background-image: url('/img/portadav3.jpg'); background-size: cover;"
 		></div>
 
+
 		<!-- Overlay semi-transparente -->
 		<div class="absolute inset-0 bg-black/50"></div>
 

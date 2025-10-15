@@ -12,7 +12,7 @@
 	<title>Arqui-Epoxy Guatemala</title>
 	<meta
 		name="description"
-		content="Especialistas en pisos epóxicos, resinas y recubrimientos industriales en Guatemala. Calidad, durabilidad y diseño para tus proyectos."
+		content="Especialistas en pisos Epóxicos, resinas y Recubrimientos Epóxicos de grado Quirúrgico para Clínicas, Quirófanos, Bodegas, Viviendas, Cuartos Fríos y Parqueos. Ofrecemos calidad, durabilidad y diseño en cada proyecto."
 	/>
 	<meta
 		name="keywords"

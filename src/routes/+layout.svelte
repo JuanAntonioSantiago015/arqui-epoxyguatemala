@@ -21,21 +21,21 @@
 </svelte:head>
 
 <div class="flex flex-col min-h-screen">
-<header class="relative bg-gray-800 text-white h-[460px] md:h-[720px] overflow-hidden">
-  <!-- Imagen de fondo (más abajo y más visible) -->
+<header class="relative bg-gray-800 text-white h-[480px] md:h-[750px] overflow-hidden">
+  <!-- Imagen de fondo (ahora con tu imagen real) -->
   <div
-    class="absolute inset-0 bg-no-repeat"
+    class="absolute inset-0 bg-no-repeat bg-center"
     style="
-      background-image: url('/img/arqui-epoxy-portada.jpg'); 
+      background-image: url('/img/ArquiEpoxy-Portada.jpg'); 
       background-size: cover; 
-      background-position: center 30%;
+      background-position: center 40%;
     "
   ></div>
 
-  <!-- Oscurecedor -->
+  <!-- Capa oscura para contraste -->
   <div class="absolute inset-0 bg-black/50"></div>
 
-  <!-- Navbar (botones más grandes) -->
+  <!-- Navbar -->
   <div
     class="navbar bg-base-100/80 backdrop-blur-sm shadow-sm relative z-50 mx-auto max-w-7xl mt-4 rounded-box"
   >
@@ -46,20 +46,20 @@
       </a>
     </div>
 
-    <!-- Menú -->
+    <!-- Menú principal (botones más grandes) -->
     <div class="flex-none">
-      <div class="flex items-center space-x-1 md:space-x-4 px-2 md:px-4">
-        <a href="/" class="btn btn-ghost px-4 md:px-5 text-base md:text-lg">Inicio</a>
-        <a href="/services" class="btn btn-ghost px-4 md:px-5 text-base md:text-lg">Servicios</a>
-        <a href="/projects" class="btn btn-ghost px-4 md:px-5 text-base md:text-lg">Proyectos</a>
-        <a href="/about" class="btn btn-ghost px-4 md:px-5 text-base md:text-lg">Nosotros</a>
+      <div class="flex items-center space-x-2 md:space-x-5 px-2 md:px-5">
+        <a href="/" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Inicio</a>
+        <a href="/services" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Servicios</a>
+        <a href="/projects" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Proyectos</a>
+        <a href="/about" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Nosotros</a>
 
-        <!-- WhatsApp más grande -->
+        <!-- Botón WhatsApp más destacado -->
         <a
           href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
           target="_blank"
           rel="noopener"
-          class="btn px-4 md:px-6 text-base md:text-lg bg-green-600 hover:bg-green-700 text-white md:ml-2"
+          class="btn px-5 md:px-7 text-base md:text-lg bg-green-600 hover:bg-green-700 text-white font-semibold"
         >
           WhatsApp
         </a>
@@ -67,11 +67,12 @@
     </div>
   </div>
 
-  <!-- Contenido del header (TEXTO REMOVIDO) -->
+  <!-- Contenido del header (texto removido) -->
   <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
-    <!-- (Intencionalmente vacío para quitar el título) -->
+    <!-- vacío intencionalmente -->
   </div>
 </header>
+
 
 
 	<!-- Aquí el contenido de la página -->

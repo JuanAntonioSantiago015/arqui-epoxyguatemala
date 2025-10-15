@@ -21,18 +21,20 @@
 </svelte:head>
 
 <div class="flex flex-col min-h-screen">
-<header class="relative bg-gray-800 text-white h-[480px] md:h-[750px] overflow-hidden">
-  <!-- Imagen de fondo (ahora con tu imagen real) -->
+<header class="relative bg-gray-800 text-white h-[420px] md:h-[600px] overflow-hidden">
+  <!-- Imagen de fondo (ajustada sin estirarse) -->
   <div
-    class="absolute inset-0 bg-no-repeat bg-center"
+    class="absolute inset-0 bg-no-repeat"
     style="
-      background-image: url('/img/ArquiEpoxy-Portada.jpg'); 
-      background-size: cover; 
-      background-position: center 40%;
+      background-image: url('/img/ArquiEpoxy-Portada.jpg');
+      background-size: contain;   /* evita que se estire */
+      background-repeat: no-repeat;
+      background-position: center 60%; /* baja un poco la imagen */
+      background-color: #000; /* color de fondo si hay espacio sobrante */
     "
   ></div>
 
-  <!-- Capa oscura para contraste -->
+  <!-- Oscurecedor -->
   <div class="absolute inset-0 bg-black/50"></div>
 
   <!-- Navbar -->
@@ -53,8 +55,6 @@
         <a href="/services" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Servicios</a>
         <a href="/projects" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Proyectos</a>
         <a href="/about" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Nosotros</a>
-
-        <!-- Botón WhatsApp más destacado -->
         <a
           href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
           target="_blank"
@@ -67,13 +67,9 @@
     </div>
   </div>
 
-  <!-- Contenido del header (texto removido) -->
-  <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
-    <!-- vacío intencionalmente -->
-  </div>
+  <!-- Sin texto -->
+  <div class="relative z-10 flex items-center justify-center h-full text-center px-4"></div>
 </header>
-
-
 
 	<!-- Aquí el contenido de la página -->
 	<main>

@@ -22,17 +22,18 @@
 
 <div class="flex flex-col min-h-screen">
 <header class="relative bg-gray-800 text-white h-[420px] md:h-[600px] overflow-hidden">
-  <!-- Imagen de fondo (ajustada sin estirarse) -->
-  <div
-    class="absolute inset-0 bg-no-repeat"
-    style="
-      background-image: url('/img/ArquiEpoxy-Portada.jpg');
-      background-size: contain;   /* evita que se estire */
-      background-repeat: no-repeat;
-      background-position: center 60%; /* baja un poco la imagen */
-      background-color: #000; /* color de fondo si hay espacio sobrante */
-    "
-  ></div>
+ <!-- Imagen de fondo -->
+<div
+  class="absolute inset-0 bg-no-repeat"
+  style="
+    background-image: url('/img/PortadaArqui-poxy.jpg');
+    background-size: contain;   /* muestra toda la imagen sin recortar */
+    background-repeat: no-repeat;
+    background-position: center 60%; /* baja un poco la imagen */
+    background-color: #000; /* color de fondo si sobra espacio */
+  "
+></div>
+
 
   <!-- Oscurecedor -->
   <div class="absolute inset-0 bg-black/50"></div>

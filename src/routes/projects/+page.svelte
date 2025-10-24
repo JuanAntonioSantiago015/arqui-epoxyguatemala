@@ -272,6 +272,8 @@
 				</div>
 			</div>
 		{/each}
+
+		<!-- Petén (ya existente) -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
@@ -282,6 +284,20 @@
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Petén</h2>
 				<p>Petén, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- NUEVO: Sanatorio Santa Marta (Jalapa, Guatema) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/ArquiEpoxy-Guatemala-Jalapa.mp4" type="video/mp4" />
+					Tu navegador no soporta el video.
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Sanatorio Santa Marta</h2>
+				<p>Jalapa, Guatema</p>
 			</div>
 		</div>
 	</div>

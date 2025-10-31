@@ -164,71 +164,9 @@
 			]
 		},
 		{
-			nombre: 'Jalapa',
-			fecha: 'Jalapa, Guatemala',
-			fotos: ['/img/Jalapa/000.jpg', '/img/Jalapa/001.jpg', '/img/Jalapa/002.jpg']
-		},
-		{
-			nombre: 'Zona Médica Zona 9',
-			fecha: 'Ciudad de Guatemala, Guatemala',
-			fotos: [
-				'/img/ZonaMedica/000.jpg',
-				'/img/ZonaMedica/001.jpg',
-				'/img/ZonaMedica/002.jpg',
-				'/img/ZonaMedica/003.jpg',
-				'/img/ZonaMedica/004.jpg',
-				'/img/ZonaMedica/005.jpg',
-				'/img/ZonaMedica/006.jpg',
-				'/img/ZonaMedica/007.jpg',
-				'/img/ZonaMedica/008.jpg'
-			]
-		},
-		{
-			nombre: 'Blood Sweat Body Work',
-			fecha: 'Panamá, Centro América',
-			fotos: ['/img/Panama/003.jpg', '/img/Panama/000.jpg', '/img/Panama/001.jpg', '/img/Panama/002.jpg']
-		},
-		{
-			nombre: 'Cayalá',
-			fecha: 'Ciudad de Guatemala, Guatemala',
-			fotos: ['/img/Cayala/000.jpg', '/img/Cayala/001.jpg', '/img/Cayala/002.jpg', '/img/Cayala/003.jpg']
-		},
-		{
-			nombre: 'Jutiapa',
-			fecha: 'Jutiapa, Guatemala',
-			fotos: [
-				'/img/JutiapaJutiapa/000.jpg',
-				'/img/JutiapaJutiapa/001.jpg',
-				'/img/JutiapaJutiapa/002.jpg',
-				'/img/JutiapaJutiapa/003.jpg',
-				'/img/JutiapaJutiapa/004.jpg'
-			]
-		},
-		{
 			nombre: 'Flores',
 			fecha: 'Petén, Guatemala',
 			fotos: ['/img/Flores/000.jpg', '/img/Flores/001.jpg', '/img/Flores/002.jpg', '/img/Flores/003.jpg']
-		},
-		{
-			nombre: 'San Antonio Abad',
-			fecha: 'San Salvador, El Salvador',
-			fotos: ['/img/depSalvador/000.jpg', '/img/depSalvador/001.jpg', '/img/depSalvador/002.jpg']
-		},
-		{
-			nombre: 'Jalapa',
-			fecha: 'Jalapa, Guatemala',
-			fotos: ['/img/JalapaJalapa/000.jpg', '/img/JalapaJalapa/001.jpg', '/img/JalapaJalapa/002.jpg', '/img/JalapaJalapa/003.jpg']
-		},
-		{
-			nombre: 'Banco de Alimentos',
-			fecha: 'Ciudad de Guatemala, Guatemala',
-			fotos: [
-				'/img/bancoAlimentos/000.jpg',
-				'/img/bancoAlimentos/001.jpg',
-				'/img/bancoAlimentos/002.jpg',
-				'/img/bancoAlimentos/003.jpg',
-				'/img/bancoAlimentos/004.jpg'
-			]
 		}
 	];
 </script>
@@ -291,7 +229,21 @@
 			</figure>
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Sanatorio Santa Marta</h2>
-				<p>Jalapa, Guatema</p>
+				<p>Jalapa, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- 4️⃣ Sanatorio Centro Médico Jalapaneco -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Sanatorio-Centro-Medico-Jalapaneco.mp4" type="video/mp4" />
+					Tu navegador no soporta el video.
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Sanatorio Centro Médico Jalapaneco</h2>
+				<p>Jalapa, Guatemala</p>
 			</div>
 		</div>
 	</div>

@@ -143,30 +143,6 @@
 				'/img/LosEucaliptos/014.jpg',
 				'/img/LosEucaliptos/015.jpg'
 			]
-		},
-		{
-			nombre: 'San José Costa Rica',
-			fecha: 'Costa Rica, Centro América',
-			fotos: ['/img/cr0.jpg', '/img/cr.jpg']
-		},
-		{
-			nombre: 'Hospital San José Moscati',
-			fecha: 'San Marcos, Guatemala',
-			fotos: [
-				'/img/Moscati/000.jpg',
-				'/img/Moscati/00.jpg',
-				'/img/Moscati/01.jpg',
-				'/img/Moscati/02.jpg',
-				'/img/Moscati/03.jpg',
-				'/img/Moscati/04.jpg',
-				'/img/Moscati/05.jpg',
-				'/img/Moscati/07.jpg'
-			]
-		},
-		{
-			nombre: 'Flores',
-			fecha: 'Petén, Guatemala',
-			fotos: ['/img/Flores/000.jpg', '/img/Flores/001.jpg', '/img/Flores/002.jpg', '/img/Flores/003.jpg']
 		}
 	];
 </script>
@@ -196,7 +172,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/peten.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -210,7 +185,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxy-Guatemala-ClínicaGodoy-Jalapa.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -224,7 +198,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxy-Guatemala-Jalapa.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -238,12 +211,24 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/Sanatorio-Centro-Medico-Jalapaneco.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Sanatorio Centro Médico Jalapaneco</h2>
 				<p>Jalapa, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- 5️⃣ Hospital General de Enfermedades del IGSS (último) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Hospital-General-De-Enfermedades-Del-Igss.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Hospital General de Enfermedades del IGSS</h2>
+				<p>9A Calle 7-55, Zona 9, Guatemala</p>
 			</div>
 		</div>
 	</div>

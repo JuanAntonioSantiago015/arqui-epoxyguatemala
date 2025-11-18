@@ -232,7 +232,7 @@
 			</div>
 		</div>
 
-		<!-- 6️⃣ San Salvador (NUEVO) -->
+		<!-- 6️⃣ San Salvador -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
@@ -242,6 +242,19 @@
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">San Salvador</h2>
 				<p>San Salvador, El Salvador</p>
+			</div>
+		</div>
+
+		<!-- 7️⃣ NUEVO: Clínica Médica Genesaret -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/ArquiEpoxyGenesaret.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Clínica Médica Genesaret</h2>
+				<p>San Lucas Tolimán, Sololá</p>
 			</div>
 		</div>
 

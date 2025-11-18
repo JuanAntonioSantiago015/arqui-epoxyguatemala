@@ -231,6 +231,20 @@
 				<p>9A Calle 7-55, Zona 9, Guatemala</p>
 			</div>
 		</div>
+
+		<!-- 6️⃣ San Salvador (NUEVO) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/ArquiEpoxySalvador.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">San Salvador</h2>
+				<p>San Salvador, El Salvador</p>
+			</div>
+		</div>
+
 	</div>
 
 	<div class="flex items-center justify-center py-8">
@@ -243,9 +257,7 @@
 				class="flex items-center gap-2 text-blue-600 hover:text-blue-800"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-					<path
-						d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"
-					/>
+					<path d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"/>
 				</svg>
 				Arqui-Epoxy Guatemala
 			</a>

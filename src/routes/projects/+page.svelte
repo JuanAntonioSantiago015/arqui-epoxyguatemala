@@ -219,11 +219,11 @@
 			</div>
 		</div>
 
-		<!-- 5️⃣ Hospital General de Enfermedades del IGSS (último) -->
+		<!-- 5️⃣ Hospital General de Enfermedades del IGSS -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/Hospital-General-De-Enfermedades-Del-Igss.mp4" type="video/mp4" />
+					<source src="/videos/ArquiEpoxyHospiIgss.mp4" type="video/mp4" />
 				</video>
 			</figure>
 			<div class="card-body text-center">

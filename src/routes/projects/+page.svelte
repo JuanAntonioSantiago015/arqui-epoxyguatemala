@@ -245,7 +245,7 @@
 			</div>
 		</div>
 
-		<!-- 7️⃣ NUEVO: Clínica Médica Genesaret -->
+		<!-- 7️⃣ Clínica Médica Genesaret -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
@@ -258,6 +258,65 @@
 			</div>
 		</div>
 
+		<!-- 8️⃣ Video publicitario 1 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitario.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Te enseñamos nuestra resina epóxica grado quirúrgico
+				</h2>
+				<p>Conoce el acabado perfecto para clínicas y quirófanos.</p>
+			</div>
+		</div>
+
+		<!-- 9️⃣ Video publicitario 2 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitario1.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Resina epóxica grado quirúrgico en acción
+				</h2>
+				<p>Higiene, brillo y seguridad en cada paso.</p>
+			</div>
+		</div>
+
+		<!-- 🔟 Video publicitario grado industrial -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitariogradoindustrial.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Resina epóxica grado industrial para alto tráfico
+				</h2>
+				<p>La solución ideal para bodegas, plantas y parqueos.</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣1️⃣ Video publicitario doctora -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitarioiadoctora.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Recomendado por profesionales de la salud
+				</h2>
+				<p>Confianza y experiencia en pisos epóxicos para hospitales.</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="flex items-center justify-center py-8">
@@ -270,7 +329,9 @@
 				class="flex items-center gap-2 text-blue-600 hover:text-blue-800"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-					<path d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"/>
+					<path
+						d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"
+					/>
 				</svg>
 				Arqui-Epoxy Guatemala
 			</a>

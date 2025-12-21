@@ -317,6 +317,60 @@
 				<p>Confianza y experiencia en pisos epóxicos para hospitales.</p>
 			</div>
 		</div>
+
+		<!-- 1️⃣2️⃣ videopublicitariodiciembre.mp4 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitariodiciembre.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">¡Diciembre con pisos epóxicos que se ven increíbles!</h2>
+				<p>Brillo, limpieza y resistencia para cerrar el año con estilo.</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣3️⃣ canchabasquet-CostaRica.mp4 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/canchabasquet-CostaRica.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">San José, Costa Rica</h2>
+				<p>Resina Epóxica Grado Deportivo</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣4️⃣ Campana-ia2.mp4 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Campana-ia2.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Inspector del MSPAS avala la calidad de nuestras aplicaciones
+				</h2>
+				<p>Trabajos con estándares profesionales, seguridad y confianza en cada proyecto.</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣5️⃣ Navidad-ArquiEpoxy.mp4 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Navidad-ArquiEpoxy.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">¡Felices Fiestas de parte de Arqui-Epoxy Guatemala!</h2>
+				<p>Navidad 2025: gracias por confiar en nosotros, vamos por un año lleno de proyectos.</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="flex items-center justify-center py-8">

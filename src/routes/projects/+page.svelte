@@ -145,14 +145,6 @@
 			]
 		}
 	];
-
-	// Carrusel nuevo: Soluciones Ginecológicas Dra. Karen Ruiz
-	const solucionesGinecologicasDraKarenFotos: string[] = [
-		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(0).jpeg',
-		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(2).jpeg',
-		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(3).jpeg',
-		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM.jpeg'
-	];
 </script>
 
 <div class="px-8 py-10">
@@ -180,7 +172,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/peten.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -194,7 +185,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxy-Guatemala-ClínicaGodoy-Jalapa.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -208,7 +198,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxy-Guatemala-Jalapa.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -222,7 +211,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/Sanatorio-Centro-Medico-Jalapaneco.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -235,9 +223,7 @@
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
-					<!-- Asegúrate que el archivo en /static/videos se llame EXACTO: ArquiEpoxyHospiIgss.mp4 -->
 					<source src="/videos/ArquiEpoxyHospiIgss.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -251,7 +237,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxySalvador.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -265,7 +250,6 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/ArquiEpoxyGenesaret.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
@@ -279,11 +263,12 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/videopublicitario.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Te enseñamos nuestra resina epóxica grado quirúrgico</h2>
+				<h2 class="text-2xl font-bold mb-4">
+					Te enseñamos nuestra resina epóxica grado quirúrgico
+				</h2>
 				<p>Conoce el acabado perfecto para clínicas y quirófanos.</p>
 			</div>
 		</div>
@@ -293,11 +278,12 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/videopublicitario1.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Resina epóxica grado quirúrgico en acción</h2>
+				<h2 class="text-2xl font-bold mb-4">
+					Resina epóxica grado quirúrgico en acción
+				</h2>
 				<p>Higiene, brillo y seguridad en cada paso.</p>
 			</div>
 		</div>
@@ -307,11 +293,12 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/videopublicitariogradoindustrial.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Resina epóxica grado industrial para alto tráfico</h2>
+				<h2 class="text-2xl font-bold mb-4">
+					Resina epóxica grado industrial para alto tráfico
+				</h2>
 				<p>La solución ideal para bodegas, plantas y parqueos.</p>
 			</div>
 		</div>
@@ -321,81 +308,46 @@
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
 					<source src="/videos/videopublicitarioiadoctora.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Recomendado por profesionales de la salud</h2>
-				<p>Confianza y experiencia en pisos epóxicos para hospitales.</p>
-			</div>
-		</div>
-
-		<!-- 1️⃣2️⃣ Video publicitario diciembre -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videopublicitariodiciembre.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Diciembre de estrenos: pisos epóxicos impecables</h2>
-				<p>Acabados premium, higiene y brillo para tus espacios.</p>
-			</div>
-		</div>
-
-		<!-- 1️⃣3️⃣ Canchas San José, Costa Rica -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/canchabasquet-CostaRica.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">San José, Costa Rica</h2>
-				<p>Resina Epóxica Grado Deportivo</p>
-			</div>
-		</div>
-
-		<!-- 1️⃣4️⃣ Campaña MSPAS -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/Campana-ia2.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
 				</video>
 			</figure>
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">
-					Un inspector profesional del MSPAS certifica y avala la calidad de nuestras aplicaciones
+					Recomendado por profesionales de la salud
 				</h2>
-				<p>Procesos controlados, higiene y seguridad en cada proyecto.</p>
+				<p>Confianza y experiencia en pisos epóxicos para hospitales.</p>
 			</div>
 		</div>
 
-		<!-- 1️⃣5️⃣ Navidad 2025 -->
+		<!-- ✅ TÍTULO SECCIÓN 2026 -->
+		<div class="md:col-span-2 flex justify-center py-10">
+			<h2 class="text-4xl font-extrabold text-white tracking-wide">
+				Proyectos 2026
+			</h2>
+		</div>
+
+		<!-- ✅ 2026 - Multiclínicas Zona 9 -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/Navidad-ArquiEpoxy.mp4" type="video/mp4" />
-					Tu navegador no soporta el video.
+					<source src="/videos/MulticlinicasZona9.mp4" type="video/mp4" />
 				</video>
 			</figure>
 			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Especial Navideño Arqui-Epoxy</h2>
-				<p>Navidad 2025: renueva tus espacios con estilo.</p>
+				<h2 class="text-2xl font-bold mb-4">Multiclínicas Zona 9</h2>
+				<p>Ciudad de Guatemala, Guatemala</p>
 			</div>
 		</div>
 
-		<!-- 1️⃣6️⃣ Soluciones Ginecológicas Dra. Karen Ruiz (Carrusel) -->
+		<!-- ✅ 2026 - Punto Médico San José -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
-				<Carousel fotos={solucionesGinecologicasDraKarenFotos} id="soluciones-ginecologicas-dra-karen" />
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/PuntoMedicoSanJose.mp4" type="video/mp4" />
+				</video>
 			</figure>
 			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Soluciones Ginecológicas Dra. Karen Ruiz</h2>
-				<p>Mazatenango, Suchitepéquez</p>
+				<h2 class="text-2xl font-bold mb-4">Punto Médico San José</h2>
+				<p>San José Pinula, Guatemala</p>
 			</div>
 		</div>
 	</div>

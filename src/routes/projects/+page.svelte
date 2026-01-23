@@ -145,6 +145,14 @@
 			]
 		}
 	];
+
+	// Carrusel nuevo (después de Navidad 2025)
+	const solucionesKarenFotos: string[] = [
+		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM.jpeg',
+		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(1).jpeg',
+		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(2).jpeg',
+		'/img/SolucionesGinecologicasDraKaren/WhatsApp%20Image%202025-12-29%20at%209.46.18%20PM%20(3).jpeg'
+	];
 </script>
 
 <div class="px-8 py-10">
@@ -318,14 +326,77 @@
 			</div>
 		</div>
 
-		<!-- ✅ TÍTULO SECCIÓN 2026 -->
-		<div class="md:col-span-2 flex justify-center py-10">
-			<h2 class="text-4xl font-extrabold text-white tracking-wide">
-				Proyectos 2026
-			</h2>
+		<!-- 1️⃣2️⃣ Videopublicitario Diciembre -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitariodiciembre.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Brillo, higiene y resistencia en un solo piso</h2>
+				<p>Transformamos tus espacios con resina epóxica de alto desempeño.</p>
+			</div>
 		</div>
 
-		<!-- ✅ 2026 - Multiclínicas Zona 9 -->
+		<!-- 1️⃣3️⃣ Canchas basquet - Costa Rica -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/canchabasquet-CostaRica.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">San José, Costa Rica</h2>
+				<p>Resina Epóxica Grado Deportivo</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣4️⃣ Campana MSPAS -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Campana-ia2.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">
+					Un inspector profesional del MSPAS certifica y avala la calidad de nuestras aplicaciones
+				</h2>
+				<p>Cumplimiento, confianza y acabados de nivel profesional.</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣5️⃣ Navidad 2025 -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/Navidad-ArquiEpoxy.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Especial Navideño</h2>
+				<p>Navidad 2025: cerramos el año con proyectos que brillan.</p>
+			</div>
+		</div>
+
+		<!-- 1️⃣6️⃣ Soluciones Ginecológicas Dra. Karen Ruiz (Carrusel) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<Carousel fotos={solucionesKarenFotos} id="soluciones-karen" />
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-center text-2xl font-bold mb-4">Soluciones Ginecológicas Dra. Karen Ruiz</h2>
+				<p>Mazatenango, Suchitepéquez</p>
+			</div>
+		</div>
+
+		<!-- ✅ Título para sección 2026 -->
+		<div class="md:col-span-2 flex justify-center">
+			<h2 class="text-3xl font-extrabold text-white py-6">Proyectos 2026</h2>
+		</div>
+
+		<!-- 2026 - 1️⃣ Multiclínicas Zona 9 -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
@@ -338,7 +409,7 @@
 			</div>
 		</div>
 
-		<!-- ✅ 2026 - Punto Médico San José -->
+		<!-- 2026 - 2️⃣ Punto Médico San José -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
 				<video class="w-[360px] rounded-lg" controls>
@@ -348,6 +419,32 @@
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Punto Médico San José</h2>
 				<p>San José Pinula, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- Después de 2026: Poptún Petén -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/PoptunPeten.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Poptún</h2>
+				<p>Petén, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- Después de 2026: Ciudad de Guatemala -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/CiudadDeGuatemala.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Ciudad de Guatemala</h2>
+				<p>Guatemala</p>
 			</div>
 		</div>
 	</div>

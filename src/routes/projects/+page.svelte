@@ -448,6 +448,32 @@
 			</div>
 		</div>
 
+		<!-- Enero (publicitario) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublieneroarquiepoxy%20%281%29.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Arranca el año con un piso que impone</h2>
+				<p>Resina epóxica premium: brillo, limpieza y resistencia desde el día 1.</p>
+			</div>
+		</div>
+
+		<!-- Febrero (publicitario) -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videopublicitariofebrero%20%281%29.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Febrero de transformación total</h2>
+				<p>De lo común a lo profesional: pisos epóxicos que elevan tu espacio.</p>
+			</div>
+		</div>
+
 		<!-- Quiché - Centro Médico Santa Clara -->
 		<div class="card bg-base-100 shadow-sm">
 			<figure>
@@ -461,7 +487,7 @@
 			</div>
 		</div>
 
-		<!-- ✅ VIDEOS NUEVOS (DEBEN IR DESPUÉS DE SANTA CLARA, EN ESTE ORDEN) -->
+		<!-- ✅ ÚLTIMOS 6 VIDEOS (DESPUÉS DE SANTA CLARA, Y DEBEN QUEDAR AL FINAL) -->
 
 		<!-- 1) datossobrelaresinaepoxica -->
 		<div class="card bg-base-100 shadow-sm">
@@ -538,34 +564,6 @@
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Antigua Guatemala: presencia premium, desempeño real</h2>
 				<p>Superficie limpia, resistente y con acabado institucional: brillo controlado y mantenimiento sencillo.</p>
-			</div>
-		</div>
-
-		<!-- ✅ NUEVOS 2 VIDEOS (AL FINAL, DESPUÉS DE LOS 6 NUEVOS) -->
-
-		<!-- Enero (publicitario) -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videopublieneroarquiepoxy%20%281%29.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Arranca el año con un piso que impone</h2>
-				<p>Resina epóxica premium: brillo, limpieza y resistencia desde el día 1.</p>
-			</div>
-		</div>
-
-		<!-- Febrero (publicitario) -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videopublicitariofebrero%20%281%29.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Febrero de transformación total</h2>
-				<p>De lo común a lo profesional: pisos epóxicos que elevan tu espacio.</p>
 			</div>
 		</div>
 	</div>

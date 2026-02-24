@@ -1,3 +1,5 @@
+import daisyui from 'daisyui';
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -9,12 +11,12 @@ export default {
 			}
 		}
 	},
-	plugins: [require('daisyui')],
+	plugins: [daisyui],
 	daisyui: {
 		themes: [
 			{
 				arquiepoxy: {
-					primary: '#1b68a9', // azul marca
+					primary: '#1b68a9',
 					'primary-content': '#ffffff',
 					secondary: '#0ea5e9',
 					'secondary-content': '#001018',
@@ -22,7 +24,7 @@ export default {
 					'accent-content': '#052e16',
 					neutral: '#0b1220',
 					'neutral-content': '#e5e7eb',
-					'base-100': '#0b1220', // fondo principal
+					'base-100': '#0b1220',
 					'base-200': '#0f1a2e',
 					'base-300': '#16233d',
 					'base-content': '#e5e7eb',

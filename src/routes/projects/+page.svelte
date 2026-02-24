@@ -448,7 +448,100 @@
 			</div>
 		</div>
 
-		<!-- ✅ NUEVOS 3 VIDEOS (AL FINAL) -->
+		<!-- Quiché - Centro Médico Santa Clara -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videocentromedicoquiche.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Centro Médico de Especialidades Santa Clara</h2>
+				<p>Quiché, Guatemala</p>
+			</div>
+		</div>
+
+		<!-- ✅ VIDEOS NUEVOS (DEBEN IR DESPUÉS DE SANTA CLARA, EN ESTE ORDEN) -->
+
+		<!-- 1) datossobrelaresinaepoxica -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/datossobrelaresinaepoxica.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Resina epóxica sin mitos: lo que realmente importa</h2>
+				<p>Higiene, resistencia y durabilidad explicadas con criterio técnico para proyectos clínicos e industriales.</p>
+			</div>
+		</div>
+
+		<!-- 2) videoaplicacionaterrazaciudaddguatemala -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videoaplicacionaterrazaciudaddguatemala.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Terraza con acabado premium en Ciudad de Guatemala</h2>
+				<p>Aplicación profesional: superficie uniforme, sellada y lista para uso exigente con presentación impecable.</p>
+			</div>
+		</div>
+
+		<!-- 3) videofinalbodegaquiche -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videofinalbodegaquiche.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Entrega final en bodega: lista para alto tráfico</h2>
+				<p>Acabado industrial de alto desempeño: resistencia a abrasión, fácil limpieza y operación continua.</p>
+			</div>
+		</div>
+
+		<!-- 4) laresinatambienimpermeabiliza -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/laresinatambienimpermeabiliza.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Protección total: la resina también impermeabiliza</h2>
+				<p>Además de resistencia química y mecánica, sella la superficie para controlar humedad y simplificar el mantenimiento.</p>
+			</div>
+		</div>
+
+		<!-- 5) bodegaquiche -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/bodegaquiche.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Bodega en Quiché: avance con estándar industrial</h2>
+				<p>Nivelación, adherencia y desempeño: un piso diseñado para trabajo pesado y operación diaria sin sorpresas.</p>
+			</div>
+		</div>
+
+		<!-- 6) videoantiguaguatemala -->
+		<div class="card bg-base-100 shadow-sm">
+			<figure>
+				<video class="w-[360px] rounded-lg" controls>
+					<source src="/videos/videoantiguaguatemala.mp4" type="video/mp4" />
+				</video>
+			</figure>
+			<div class="card-body text-center">
+				<h2 class="text-2xl font-bold mb-4">Antigua Guatemala: presencia premium, desempeño real</h2>
+				<p>Superficie limpia, resistente y con acabado institucional: brillo controlado y mantenimiento sencillo.</p>
+			</div>
+		</div>
+
+		<!-- ✅ NUEVOS 2 VIDEOS (AL FINAL, DESPUÉS DE LOS 6 NUEVOS) -->
 
 		<!-- Enero (publicitario) -->
 		<div class="card bg-base-100 shadow-sm">
@@ -473,99 +566,6 @@
 			<div class="card-body text-center">
 				<h2 class="text-2xl font-bold mb-4">Febrero de transformación total</h2>
 				<p>De lo común a lo profesional: pisos epóxicos que elevan tu espacio.</p>
-			</div>
-		</div>
-
-		<!-- Quiché - Centro Médico Santa Clara -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videocentromedicoquiche.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Centro Médico de Especialidades Santa Clara</h2>
-				<p>Quiché, Guatemala</p>
-			</div>
-		</div>
-
-		<!-- ✅ NUEVOS VIDEOS (EN ORDEN: datossobrelaresinaepoxica → videoantiguaguatemala) -->
-
-		<!-- 2026 - Video: datossobrelaresinaepoxica -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/datossobrelaresinaepoxica.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Resina epóxica sin mitos: lo que realmente importa</h2>
-				<p>Higiene, resistencia y durabilidad explicadas con criterio técnico para proyectos clínicos e industriales.</p>
-			</div>
-		</div>
-
-		<!-- 2026 - Video: videoaplicacionaterrazaciudaddguatemala -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videoaplicacionaterrazaciudaddguatemala.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Terraza con acabado premium en Ciudad de Guatemala</h2>
-				<p>Aplicación profesional: superficie uniforme, sellada y lista para uso exigente con presentación impecable.</p>
-			</div>
-		</div>
-
-		<!-- 2026 - Video: videofinalbodegaquiche -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videofinalbodegaquiche.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Entrega final en bodega: lista para alto tráfico</h2>
-				<p>Acabado industrial de alto desempeño: resistencia a abrasión, fácil limpieza y operación continua.</p>
-			</div>
-		</div>
-
-		<!-- 2026 - Video: laresinatambienimpermeabiliza -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/laresinatambienimpermeabiliza.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Protección total: la resina también impermeabiliza</h2>
-				<p>Además de resistencia química y mecánica, sella la superficie para controlar humedad y simplificar el mantenimiento.</p>
-			</div>
-		</div>
-
-		<!-- 2026 - Video: bodegaquiche -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/bodegaquiche.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Bodega en Quiché: avance con estándar industrial</h2>
-				<p>Nivelación, adherencia y desempeño: un piso diseñado para trabajo pesado y operación diaria sin sorpresas.</p>
-			</div>
-		</div>
-
-		<!-- 2026 - Video: videoantiguaguatemala -->
-		<div class="card bg-base-100 shadow-sm">
-			<figure>
-				<video class="w-[360px] rounded-lg" controls>
-					<source src="/videos/videoantiguaguatemala.mp4" type="video/mp4" />
-				</video>
-			</figure>
-			<div class="card-body text-center">
-				<h2 class="text-2xl font-bold mb-4">Antigua Guatemala: presencia premium, desempeño real</h2>
-				<p>Superficie limpia, resistente y con acabado institucional: brillo controlado y mantenimiento sencillo.</p>
 			</div>
 		</div>
 	</div>

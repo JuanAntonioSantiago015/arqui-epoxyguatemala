@@ -1,187 +1,215 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
-	import '../app.css';
 	import { pageTitle } from '$lib/stores/pageTitle';
-	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { onDestroy } from 'svelte';
 
-	injectAnalytics();
+	let title = 'ARQUIEPOXY';
+	const unsub = pageTitle.subscribe((v) => (title = v || 'ARQUIEPOXY'));
+	onDestroy(unsub);
+
+	const WHATSAPP_LINK =
+		'https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotizaci%C3%B3n%20para%20resina%20ep%C3%B3xica.';
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/img/arqui-epoxy.png" />
-	<title>Arqui-Epoxy Guatemala</title>
+	<title>{title} | ArquiEpoxy Guatemala</title>
 	<meta
 		name="description"
-		content="Especialistas en pisos Epóxicos, resinas y Recubrimientos Epóxicos de grado Quirúrgico para Clínicas, Quirófanos, Bodegas, Viviendas, Cuartos Fríos y Parqueos. Ofrecemos calidad, durabilidad y diseño en cada proyecto."
+		content="Aplicación profesional de resina epóxica grado quirúrgico, industrial y deportivo en Guatemala y Centroamérica."
 	/>
+	<meta name="theme-color" content="#1b68a9" />
+
+	<!-- Open Graph básico -->
+	<meta property="og:site_name" content="ArquiEpoxy Guatemala" />
+	<meta property="og:title" content="{title} | ArquiEpoxy Guatemala" />
 	<meta
-		name="keywords"
-		content="epóxico Guatemala, pisos epóxicos, resinas, recubrimientos industriales, Arqui-Epoxy"
+		property="og:description"
+		content="Pisos epóxicos de alto desempeño para hospitales, clínicas, bodegas y proyectos institucionales."
 	/>
+	<meta property="og:type" content="website" />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen">
-<header class="relative bg-gray-800 text-white h-[420px] md:h-[600px] overflow-hidden">
- <!-- Imagen de fondo -->
-<div
-  class="absolute inset-0 bg-no-repeat"
-  style="
-    background-image: url('/img/PortadaArqui-poxy.jpg');
-    background-size: contain;   /* muestra toda la imagen sin recortar */
-    background-repeat: no-repeat;
-    background-position: center 60%; /* baja un poco la imagen */
-    background-color: #000; /* color de fondo si sobra espacio */
-  "
-></div>
+<div data-theme="arquiepoxy" class="min-h-screen">
+	<!-- NAVBAR / HEADER -->
+	<div class="sticky top-0 z-50 border-b border-base-300/60 bg-base-100/70 backdrop-blur-xl">
+		<div class="section">
+			<div class="navbar px-0">
+				<div class="navbar-start">
+					<!-- Mobile menu button -->
+					<label for="app-drawer" class="btn btn-ghost lg:hidden" aria-label="Abrir menú">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</label>
 
+					<a href="/" class="flex items-center gap-3">
+						<img src="/img/arqui-epoxy.png" alt="ArquiEpoxy Guatemala" class="h-10 w-auto" />
+						<div class="hidden sm:block leading-tight">
+							<div class="font-extrabold tracking-tight">ArquiEpoxy</div>
+							<div class="text-xs text-base-content/70">Guatemala • Centroamérica</div>
+						</div>
+					</a>
+				</div>
 
-  <!-- Oscurecedor -->
-  <div class="absolute inset-0 bg-black/50"></div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal gap-1 px-1">
+						<li><a href="/" class="font-semibold">Inicio</a></li>
+						<li><a href="/services" class="font-semibold">Servicios</a></li>
+						<li><a href="/projects" class="font-semibold">Proyectos</a></li>
+						<li><a href="/about" class="font-semibold">Nosotros</a></li>
+					</ul>
+				</div>
 
-  <!-- Navbar -->
-  <div
-    class="navbar bg-base-100/80 backdrop-blur-sm shadow-sm relative z-50 mx-auto max-w-7xl mt-4 rounded-box"
-  >
-    <!-- Logo -->
-    <div class="flex-1">
-      <a href="/" class="btn btn-ghost px-2">
-        <img src="/img/arqui-epoxy.png" alt="Arqui-Epoxy Guatemala" class="h-16 w-auto" />
-      </a>
-    </div>
+				<div class="navbar-end gap-2">
+					<a
+						href="/projects"
+						class="btn btn-ghost hidden md:inline-flex"
+					>
+						Ver portafolio
+					</a>
 
-    <!-- Menú principal (botones más grandes) -->
-    <div class="flex-none">
-      <div class="flex items-center space-x-2 md:space-x-5 px-2 md:px-5">
-        <a href="/" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Inicio</a>
-        <a href="/services" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Servicios</a>
-        <a href="/projects" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Proyectos</a>
-        <a href="/about" class="btn btn-ghost px-4 md:px-6 text-base md:text-lg">Nosotros</a>
-        <a
-          href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
-          target="_blank"
-          rel="noopener"
-          class="btn px-5 md:px-7 text-base md:text-lg bg-green-600 hover:bg-green-700 text-white font-semibold"
-        >
-          WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sin texto -->
-  <div class="relative z-10 flex items-center justify-center h-full text-center px-4"></div>
-</header>
-
-	<!-- Aquí el contenido de la página -->
-	<main>
-		<slot />
-	</main>
-
-	<div class="px-8 py-10">
-		<h1 class="text-3xl font-bold text-[#1b68a9] mb-8 text-center py-16">¡Elige a los Expertos!</h1>
+					<a
+						class="btn btn-primary"
+						href={WHATSAPP_LINK}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Cotizar ahora
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<footer class="bg-[#a0b7d0] text-black p-10">
-		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
-			<!-- Columna 1: Imagen + texto -->
-			<aside class="flex flex-col items-center text-center font-semibold">
-				<img src="/img/arqui-epoxy.png" alt="Arqui-Epoxy Guatemala" class="h-36 w-auto mb-4" />
-				<p>Arqui-Epoxy Guatemala</p>
-				<p>Durabilidad y Estilo En Cada Espacio</p>
-			</aside>
+	<!-- DRAWER (mobile) -->
+	<div class="drawer lg:hidden">
+		<input id="app-drawer" type="checkbox" class="drawer-toggle" />
+		<div class="drawer-content">
+			<!-- Page content -->
+			<main class="section section-pad">
+				<slot />
+			</main>
+		</div>
+		<div class="drawer-side">
+			<label for="app-drawer" class="drawer-overlay"></label>
+			<div class="w-80 min-h-full bg-base-100 border-r border-base-300/60">
+				<div class="p-4">
+					<div class="flex items-center gap-3">
+						<img src="/img/arqui-epoxy.png" alt="ArquiEpoxy Guatemala" class="h-10 w-auto" />
+						<div class="leading-tight">
+							<div class="font-extrabold tracking-tight">ArquiEpoxy</div>
+							<div class="text-xs text-base-content/70">Calidad médico-industrial</div>
+						</div>
+					</div>
 
-			<!-- Columna 2: Información de contacto -->
-<nav class="flex flex-col gap-6 items-start max-w-sm">
-	<h5 class="footer-title mb-2 font-semibold text-lg text-black">Información de contacto</h5>
+					<div class="soft-divider my-4"></div>
 
-	<!-- WhatsApp -->
-	<a
-		href="https://wa.me/50255272948?text=¡Hola!%20Quiero%20chatear%20con%20alguien."
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center gap-2 text-green-600 hover:text-green-800"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-			<path
-				d="M20.52 3.48A11.88 11.88 0 0012 0C5.37 0 0 5.37 0 12c0 2.1.55 4.13 1.6 5.9L0 24l6.3-1.6a11.94 11.94 0 005.7 1.46c6.63 0 12-5.37 12-12 0-3.2-1.3-6.18-3.48-8.38zM12 21c-1.5 0-2.97-.4-4.27-1.14l-.3-.18-3.73.94.99-3.65-.19-.3A8.94 8.94 0 013 12c0-5 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9zm5.03-6.58c-.27-.14-1.6-.78-1.85-.87-.25-.1-.44-.14-.62.14-.18.27-.7.87-.85 1.05-.15.18-.3.2-.56.07-.27-.14-1.15-.42-2.18-1.36-.8-.72-1.34-1.6-1.5-1.86-.15-.27-.02-.41.12-.55.13-.13.27-.3.4-.45.13-.15.18-.27.27-.45.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.54-.45-.46-.62-.46-.16 0-.34-.02-.52-.02s-.48.07-.73.34c-.25.27-.96.94-.96 2.3s.99 2.68 1.13 2.87c.15.18 1.95 2.97 4.73 4.16.66.28 1.18.45 1.58.57.66.19 1.26.16 1.74.1.53-.06 1.6-.65 1.82-1.28.23-.63.23-1.18.16-1.28-.06-.1-.25-.16-.52-.3z"
-			/>
-		</svg>
-		WhatsApp
-	</a>
+					<ul class="menu p-0">
+						<li><a href="/">Inicio</a></li>
+						<li><a href="/services">Servicios</a></li>
+						<li><a href="/projects">Proyectos</a></li>
+						<li><a href="/about">Nosotros</a></li>
+					</ul>
 
-	<!-- Teléfono -->
-	<a href="tel:+50255272948" class="flex items-center gap-2 text-black hover:text-green-700">
-		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-			<path
-				d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 2.33.57 3.54.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.21.2 2.42.57 3.54.11.36.03.76-.24 1.05l-2.2 2.2z"
-			/>
-		</svg>
-		(502) 5527 2948
-	</a>
+					<div class="soft-divider my-4"></div>
 
-	<!-- Facebook -->
-	<a
-		href="https://www.facebook.com/share/1AzZebobfV/"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center gap-2 text-blue-600 hover:text-blue-800"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-			<path
-				d="M22.675 0h-21.35C.597 0 0 .6 0 1.333v21.334C0 23.4.597 24 1.325 24H12v-9.294H9.293v-3.622H12V8.413c0-2.675 1.644-4.138 4.044-4.138 1.151 0 2.144.086 2.432.124v2.821h-1.671c-1.311 0-1.565.622-1.565 1.536v2.014h3.131l-.408 3.622h-2.723V24h5.338c.73 0 1.324-.6 1.324-1.333V1.333C24 .6 23.404 0 22.675 0z"
-			/>
-		</svg>
-		Arqui-Epoxy Guatemala
-	</a>
+					<a
+						class="btn btn-primary w-full"
+						href={WHATSAPP_LINK}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Cotizar por WhatsApp
+					</a>
 
-	<!-- Instagram -->
-	<a
-		href="https://www.instagram.com/arquiepoxygt"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center gap-2 text-pink-600 hover:text-pink-700"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6" viewBox="0 0 24 24">
-			<path
-				d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.507 5.507 0 0 0 12 7.5zm0 9A3.5 3.5 0 1 1 15.5 13 3.504 3.504 0 0 1 12 16.5zM18 6.5a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"
-			/>
-		</svg>
-		@arquiepoxygt
-	</a>
+					<p class="mt-3 text-xs text-base-content/70">
+						Resina epóxica grado quirúrgico • industrial • deportivo
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<!-- TikTok -->
-	<a
-		href="https://www.tiktok.com/@arquiepoxy.guatem"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center gap-2 text-gray-800 hover:text-black"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6" viewBox="0 0 24 24">
-			<path
-				d="M12 2a5.49 5.49 0 0 0 5.5 5.5 5.5 5.5 0 0 0 2.5-.6v3.2a8.74 8.74 0 0 1-5-1.5v7.9a6.5 6.5 0 1 1-6.5-6.5 6.6 6.6 0 0 1 1 .1v3a3.5 3.5 0 1 0 2.5 3.4V2h5z"
-			/>
-		</svg>
-		@arquiepoxy.guatem
-	</a>
+	<!-- DESKTOP CONTENT WRAP -->
+	<div class="hidden lg:block">
+		<main class="section section-pad">
+			<slot />
+		</main>
+	</div>
 
-	<!-- Dirección -->
-	<a
-		href="https://maps.app.goo.gl/5KgGfdPpc43HjZp39"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center gap-2 text-black hover:text-gray-300"
-	>
-		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-			<path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3z" />
-			<path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z" />
-		</svg>
-		5Av. 3-31 zona 4, Cobán Alta Verapaz
-	</a>
-</nav>
+	<!-- FOOTER -->
+	<footer class="border-t border-base-300/60 bg-base-100/60 backdrop-blur-xl">
+		<div class="section py-10">
+			<div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+				<div>
+					<div class="flex items-center gap-3">
+						<img src="/img/arqui-epoxy.png" alt="ArquiEpoxy Guatemala" class="h-10 w-auto" />
+						<div class="leading-tight">
+							<div class="font-extrabold tracking-tight">ArquiEpoxy Guatemala</div>
+							<div class="text-xs text-base-content/70">Pisos epóxicos de alto desempeño</div>
+						</div>
+					</div>
 
+					<p class="mt-4 text-sm text-base-content/80">
+						Aplicación profesional de resina epóxica grado quirúrgico, industrial y deportivo para hospitales,
+						clínicas, bodegas y proyectos institucionales en Guatemala y Centroamérica.
+					</p>
 
-			<!-- Columna 3: Vacía y más pequeña -->
-			<div class="hidden sm:block sm:col-span-1 sm:w-24"></div>
+					<div class="mt-4">
+						<a
+							class="btn btn-primary btn-sm"
+							href={WHATSAPP_LINK}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Cotizar ahora
+						</a>
+					</div>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-base-content">Navegación</h3>
+					<ul class="mt-3 space-y-2 text-sm text-base-content/80">
+						<li><a class="link link-hover" href="/">Inicio</a></li>
+						<li><a class="link link-hover" href="/services">Servicios</a></li>
+						<li><a class="link link-hover" href="/projects">Proyectos</a></li>
+						<li><a class="link link-hover" href="/about">Nosotros</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="font-bold text-base-content">Enfoque</h3>
+					<ul class="mt-3 space-y-2 text-sm text-base-content/80">
+						<li>Grado quirúrgico (clínicas y hospitales)</li>
+						<li>Grado industrial (bodegas y alto tránsito)</li>
+						<li>Grado deportivo (canchas y superficies técnicas)</li>
+						<li>Proyectos institucionales y corporativos</li>
+					</ul>
+
+					<div class="mt-4 text-xs text-base-content/60">
+						© {new Date().getFullYear()} ArquiEpoxy Guatemala. Todos los derechos reservados.
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
+
+	<!-- WhatsApp Floating Button -->
+	<a
+		href={WHATSAPP_LINK}
+		target="_blank"
+		rel="noopener noreferrer"
+		class="fixed bottom-5 right-5 z-50 btn btn-circle btn-primary shadow-lg"
+		aria-label="Cotizar por WhatsApp"
+	>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-5 w-5" fill="currentColor">
+			<path
+				d="M19.11 17.53c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.49.07-.75.35-.26.28-.98.96-.98 2.35 0 1.38 1.01 2.72 1.15 2.91.14.19 1.99 3.05 4.83 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"
+			/>
+			<path
+				d="M16.02 2.67c-7.34 0-13.31 5.97-13.31 13.31 0 2.35.62 4.64 1.8 6.65L2.7 29.33l6.87-1.8c1.93 1.06 4.1 1.62 6.45 1.62 7.34 0 13.31-5.97 13.31-13.31S23.36 2.67 16.02 2.67zm0 23.98c-2.1 0-4.16-.56-5.97-1.62l-.43-.25-4.07 1.07 1.09-3.97-.28-.41a11.77 11.77 0 0 1-1.85-6.36c0-6.48 5.27-11.76 11.76-11.76S27.78 9.63 27.78 16.1 22.5 27.65 16.02 27.65z"
+			/>
+		</svg>
+	</a>
 </div>

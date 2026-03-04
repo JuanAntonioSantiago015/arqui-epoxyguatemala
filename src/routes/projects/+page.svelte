@@ -32,10 +32,6 @@
 	};
 
 	const inferYear = (title: string): number => {
-		// Su archivo actual tiene una sección explícita "Proyectos 2026"
-		// Todo lo anterior se considera 2025 (histórico) + el carrusel de Karen (2025).
-		// Todo lo posterior al título 2026 es 2026.
-		// Aquí asignamos manualmente con base a su estructura actual (ver arrays abajo).
 		return 2025;
 	};
 
@@ -571,6 +567,18 @@
 			location: 'Antigua Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/videoantiguaguatemala.mp4' },
 			tags: ['Institucional', 'Antigua Guatemala']
+		},
+
+		// ✅ NUEVO VIDEO (DEBE IR DESPUÉS DE ANTIGUA, COMO ÚLTIMO)
+		{
+			id: 'v-2026-herrera-llerandi-hospital',
+			year: 2026,
+			category: 'Clínico',
+			title: 'Hospital Herrera Llerandi: estándar clínico premium',
+			subtitle: 'Superficie sanitaria, resistente y de alta presentación para operación hospitalaria en Ciudad de Guatemala.',
+			location: 'Ciudad de Guatemala, Guatemala',
+			media: { kind: 'video', src: '/videos/HospitalHerreraLlerandiCiudadDeGuatemala.mp4' },
+			tags: ['Clínico', 'Hospital', 'Ciudad de Guatemala', 'Higiene', 'Acabado premium']
 		}
 	];
 
@@ -602,15 +610,12 @@
 			const q = normalize(query.trim());
 			if (!q) return true;
 
-			const haystack = normalize(
-				[p.title, p.subtitle, p.location, p.category, ...p.tags].join(' ')
-			);
+			const haystack = normalize([p.title, p.subtitle, p.location, p.category, ...p.tags].join(' '));
 			return haystack.includes(q);
 		})
 		.sort((a, b) => {
 			if (sort === 'A-Z') return a.title.localeCompare(b.title);
 			if (sort === 'Antiguos primero') return a.year - b.year || a.title.localeCompare(b.title);
-			// Recientes primero
 			return b.year - a.year || a.title.localeCompare(b.title);
 		});
 
@@ -746,7 +751,6 @@
 									</video>
 								{/if}
 
-								<!-- Category badge -->
 								<div class="absolute top-3 left-3">
 									<span class={`badge ${badgeFor(p.category)}`}>{p.category}</span>
 								</div>
@@ -769,7 +773,6 @@
 										class="btn btn-ghost btn-sm"
 										href="/projects"
 										on:click|preventDefault={() => {
-											// UX: resaltar búsqueda rápida por ubicación
 											query = p.location;
 											yearFilter = 'Todos';
 											categoryFilter = 'Todas';
@@ -788,7 +791,6 @@
 		{/each}
 	{/if}
 
-	<!-- CTA final -->
 	<div class="mt-14 glass-card rounded-3xl p-8">
 		<div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:items-center">
 			<div class="md:col-span-2">

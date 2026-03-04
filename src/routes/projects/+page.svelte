@@ -19,25 +19,9 @@
 		tags: string[];
 	};
 
-	// Helpers
-	const categoryFromText = (text: string): Project['category'] => {
-		const t = text.toLowerCase();
-		if (t.includes('clínica') || t.includes('hospital') || t.includes('igss') || t.includes('sanatorio'))
-			return 'Clínico';
-		if (t.includes('bodega') || t.includes('industrial') || t.includes('parqueo') || t.includes('planta'))
-			return 'Industrial';
-		if (t.includes('cancha') || t.includes('deport')) return 'Deportivo';
-		if (t.includes('publicitario') || t.includes('campana') || t.includes('navidad')) return 'Publicitario';
-		return 'Institucional';
-	};
-
-	const inferYear = (title: string): number => {
-		return 2025;
-	};
-
 	const unique = (arr: string[]) => Array.from(new Set(arr));
 
-	// ====== DATA (migrado de su código actual, con estructura premium + buscador) ======
+	// ====== DATA ======
 	const galleryProjects: Project[] = [
 		{
 			id: 'g-01-santa-rosa',
@@ -276,7 +260,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Soluciones Ginecológicas Dra. Karen Ruiz',
-			subtitle: 'Acabado clínico: higiene, limpieza rápida y estética profesional para atención especializada.',
+			subtitle:
+				'Acabado clínico: higiene, limpieza rápida y estética profesional para atención especializada.',
 			location: 'Mazatenango, Suchitepéquez',
 			media: { kind: 'carousel', fotos: solucionesKarenFotos },
 			tags: ['Clínico', 'Mazatenango', 'Acabado premium']
@@ -299,7 +284,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Clínica Godoy: acabado quirúrgico en Jalapa',
-			subtitle: 'Diseñado para higiene y operación clínica: superficie sellada y fácil de sanitizar.',
+			subtitle:
+				'Diseñado para higiene y operación clínica: superficie sellada y fácil de sanitizar.',
 			location: 'Jalapa, Guatemala',
 			media: { kind: 'video', src: '/videos/ArquiEpoxy-Guatemala-ClínicaGodoy-Jalapa.mp4' },
 			tags: ['Clínico', 'Jalapa']
@@ -319,7 +305,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Sanatorio Centro Médico Jalapaneco',
-			subtitle: 'Acabado clínico de alto desempeño con control sanitario y fácil mantenimiento.',
+			subtitle:
+				'Acabado clínico de alto desempeño con control sanitario y fácil mantenimiento.',
 			location: 'Jalapa, Guatemala',
 			media: { kind: 'video', src: '/videos/Sanatorio-Centro-Medico-Jalapaneco.mp4' },
 			tags: ['Clínico', 'Jalapa']
@@ -329,7 +316,8 @@
 			year: 2025,
 			category: 'Institucional',
 			title: 'IGSS: superficie institucional con resistencia real',
-			subtitle: 'Pensado para operación continua: limpieza rápida, durabilidad y acabado profesional.',
+			subtitle:
+				'Pensado para operación continua: limpieza rápida, durabilidad y acabado profesional.',
 			location: '9A Calle 7-55, Zona 9, Guatemala',
 			media: { kind: 'video', src: '/videos/ArquiEpoxyHospiIgss.mp4' },
 			tags: ['Institucional', 'IGSS', 'Ciudad de Guatemala']
@@ -349,7 +337,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Clínica Médica Genesaret',
-			subtitle: 'Superficie higiénica y durable para atención médica: limpieza rápida y acabado uniforme.',
+			subtitle:
+				'Superficie higiénica y durable para atención médica: limpieza rápida y acabado uniforme.',
 			location: 'San Lucas Tolimán, Sololá',
 			media: { kind: 'video', src: '/videos/ArquiEpoxyGenesaret.mp4' },
 			tags: ['Clínico', 'Sololá']
@@ -369,7 +358,8 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Grado quirúrgico en acción',
-			subtitle: 'Higiene, brillo y seguridad en cada paso: superficie sellada de alto nivel.',
+			subtitle:
+				'Higiene, brillo y seguridad en cada paso: superficie sellada de alto nivel.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitario1.mp4' },
 			tags: ['Publicitario', 'Grado quirúrgico']
@@ -379,7 +369,8 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Grado industrial para alto tráfico',
-			subtitle: 'Solución para bodegas, plantas y parqueos: resistencia y limpieza eficiente.',
+			subtitle:
+				'Solución para bodegas, plantas y parqueos: resistencia y limpieza eficiente.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitariogradoindustrial.mp4' },
 			tags: ['Publicitario', 'Industrial']
@@ -389,7 +380,8 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Recomendado por profesionales de la salud',
-			subtitle: 'Confianza clínica respaldada por resultados: superficies diseñadas para higiene.',
+			subtitle:
+				'Confianza clínica respaldada por resultados: superficies diseñadas para higiene.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitarioiadoctora.mp4' },
 			tags: ['Publicitario', 'Clínico']
@@ -399,7 +391,8 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Brillo, higiene y resistencia en un solo piso',
-			subtitle: 'Transformación real con resina epóxica de alto desempeño para entornos exigentes.',
+			subtitle:
+				'Transformación real con resina epóxica de alto desempeño para entornos exigentes.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitariodiciembre.mp4' },
 			tags: ['Publicitario', 'Institucional']
@@ -409,7 +402,8 @@
 			year: 2025,
 			category: 'Deportivo',
 			title: 'San José, Costa Rica: grado deportivo',
-			subtitle: 'Superficie técnica para canchas: desempeño, resistencia y acabado profesional.',
+			subtitle:
+				'Superficie técnica para canchas: desempeño, resistencia y acabado profesional.',
 			location: 'San José, Costa Rica',
 			media: { kind: 'video', src: '/videos/canchabasquet-CostaRica.mp4' },
 			tags: ['Deportivo', 'Centroamérica']
@@ -419,7 +413,8 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Cumplimiento y confianza: enfoque MSPAS',
-			subtitle: 'Calidad, higiene y procesos profesionales para proyectos institucionales.',
+			subtitle:
+				'Calidad, higiene y procesos profesionales para proyectos institucionales.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/Campana-ia2.mp4' },
 			tags: ['Publicitario', 'MSPAS']
@@ -441,7 +436,8 @@
 			year: 2026,
 			category: 'Clínico',
 			title: 'Multiclínicas Zona 9',
-			subtitle: 'Superficie clínica de alto nivel: higiene, resistencia y presentación institucional.',
+			subtitle:
+				'Superficie clínica de alto nivel: higiene, resistencia y presentación institucional.',
 			location: 'Ciudad de Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/MulticlinicasZona9.mp4' },
 			tags: ['Clínico', 'Ciudad de Guatemala']
@@ -461,7 +457,8 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Poptún: proyecto institucional en Petén',
-			subtitle: 'Resistencia y limpieza para operación continua con acabado profesional.',
+			subtitle:
+				'Resistencia y limpieza para operación continua con acabado profesional.',
 			location: 'Petén, Guatemala',
 			media: { kind: 'video', src: '/videos/PoptunPeten.mp4' },
 			tags: ['Institucional', 'Petén']
@@ -471,7 +468,8 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Ciudad de Guatemala: ejecución profesional',
-			subtitle: 'Superficie uniforme, sellada y lista para uso exigente con estética premium.',
+			subtitle:
+				'Superficie uniforme, sellada y lista para uso exigente con estética premium.',
 			location: 'Guatemala',
 			media: { kind: 'video', src: '/videos/CiudadDeGuatemala.mp4' },
 			tags: ['Institucional', 'Ciudad de Guatemala']
@@ -501,13 +499,14 @@
 			year: 2026,
 			category: 'Clínico',
 			title: 'Centro Médico de Especialidades Santa Clara',
-			subtitle: 'Entorno clínico: higiene, resistencia y acabado premium para atención especializada.',
+			subtitle:
+				'Entorno clínico: higiene, resistencia y acabado premium para atención especializada.',
 			location: 'Quiché, Guatemala',
 			media: { kind: 'video', src: '/videos/videocentromedicoquiche.mp4' },
 			tags: ['Clínico', 'Quiché']
 		},
 
-		// Últimos 6 videos (final)
+		// Últimos 6 videos
 		{
 			id: 'v-2026-datos-resina',
 			year: 2026,
@@ -523,7 +522,8 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Terraza en Ciudad de Guatemala: acabado premium',
-			subtitle: 'Aplicación profesional: superficie uniforme, sellada y lista para uso exigente.',
+			subtitle:
+				'Aplicación profesional: superficie uniforme, sellada y lista para uso exigente.',
 			location: 'Ciudad de Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/videoaplicacionaterrazaciudaddguatemala.mp4' },
 			tags: ['Institucional', 'Ciudad de Guatemala']
@@ -533,7 +533,8 @@
 			year: 2026,
 			category: 'Industrial',
 			title: 'Bodega Quiché: entrega final para alto tráfico',
-			subtitle: 'Resistencia a abrasión y limpieza eficiente para operación continua.',
+			subtitle:
+				'Resistencia a abrasión y limpieza eficiente para operación continua.',
 			location: 'Quiché, Guatemala',
 			media: { kind: 'video', src: '/videos/videofinalbodegaquiche.mp4' },
 			tags: ['Industrial', 'Quiché', 'Bodega']
@@ -543,7 +544,8 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Además de resistencia: la resina también impermeabiliza',
-			subtitle: 'Sellado de superficie para control de humedad y mantenimiento más simple.',
+			subtitle:
+				'Sellado de superficie para control de humedad y mantenimiento más simple.',
 			location: 'Video informativo',
 			media: { kind: 'video', src: '/videos/laresinatambienimpermeabiliza.mp4' },
 			tags: ['Informativo', 'Protección']
@@ -553,7 +555,8 @@
 			year: 2026,
 			category: 'Industrial',
 			title: 'Bodega Quiché: avance con estándar industrial',
-			subtitle: 'Nivelación, adherencia y desempeño para trabajo pesado sin sorpresas.',
+			subtitle:
+				'Nivelación, adherencia y desempeño para trabajo pesado sin sorpresas.',
 			location: 'Quiché, Guatemala',
 			media: { kind: 'video', src: '/videos/bodegaquiche.mp4' },
 			tags: ['Industrial', 'Bodega', 'Quiché']
@@ -563,19 +566,21 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Antigua Guatemala: presencia premium, desempeño real',
-			subtitle: 'Superficie limpia, resistente y con acabado institucional de alto nivel.',
+			subtitle:
+				'Superficie limpia, resistente y con acabado institucional de alto nivel.',
 			location: 'Antigua Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/videoantiguaguatemala.mp4' },
 			tags: ['Institucional', 'Antigua Guatemala']
 		},
 
-		// ✅ NUEVO VIDEO (DEBE IR DESPUÉS DE ANTIGUA, COMO ÚLTIMO)
+		// ✅ NUEVO ÚLTIMO VIDEO (HOSPITAL HERRERA LLERANDI)
 		{
-			id: 'v-2026-herrera-llerandi-hospital',
+			id: 'v-2026-hospital-herrera-llerandi',
 			year: 2026,
 			category: 'Clínico',
-			title: 'Hospital Herrera Llerandi: estándar clínico premium',
-			subtitle: 'Superficie sanitaria, resistente y de alta presentación para operación hospitalaria en Ciudad de Guatemala.',
+			title: 'Hospital Herrera Llerandi: excelencia clínica en cada detalle',
+			subtitle:
+				'Resina epóxica grado quirúrgico: higiene superior, resistencia y una presentación institucional impecable.',
 			location: 'Ciudad de Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/HospitalHerreraLlerandiCiudadDeGuatemala.mp4' },
 			tags: ['Clínico', 'Hospital', 'Ciudad de Guatemala', 'Higiene', 'Acabado premium']
@@ -590,7 +595,6 @@
 	let categoryFilter: 'Todas' | Project['category'] = 'Todas';
 	let sort: 'Recientes primero' | 'Antiguos primero' | 'A-Z' = 'Recientes primero';
 
-	// Options
 	const yearOptions = ['Todos', '2026', '2025'] as const;
 	const categoryOptions = unique(['Todas', ...allProjects.map((p) => p.category)]) as Array<
 		'Todas' | Project['category']
@@ -634,11 +638,6 @@
 		if (cat === 'Institucional') return 'badge-primary';
 		return 'badge-ghost';
 	};
-
-	const mediaKey = (p: Project) => {
-		if (p.media.kind === 'video') return p.media.src;
-		return p.media.fotos?.[0] ?? p.id;
-	};
 </script>
 
 <section class="section section-pad">
@@ -655,10 +654,8 @@
 		</p>
 	</header>
 
-	<!-- Controls -->
 	<div class="mt-8 glass-card rounded-3xl p-5">
 		<div class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:items-end">
-			<!-- Search -->
 			<div class="lg:col-span-6">
 				<label class="text-sm font-semibold text-base-content/80">Buscar</label>
 				<div class="mt-2 join w-full">
@@ -673,7 +670,6 @@
 				</div>
 			</div>
 
-			<!-- Year -->
 			<div class="lg:col-span-2">
 				<label class="text-sm font-semibold text-base-content/80">Año</label>
 				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={yearFilter}>
@@ -683,7 +679,6 @@
 				</select>
 			</div>
 
-			<!-- Category -->
 			<div class="lg:col-span-2">
 				<label class="text-sm font-semibold text-base-content/80">Categoría</label>
 				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={categoryFilter}>
@@ -693,7 +688,6 @@
 				</select>
 			</div>
 
-			<!-- Sort -->
 			<div class="lg:col-span-2">
 				<label class="text-sm font-semibold text-base-content/80">Orden</label>
 				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={sort}>
@@ -718,7 +712,6 @@
 		</div>
 	</div>
 
-	<!-- Results -->
 	{#if filtered.length === 0}
 		<div class="mt-10 glass-card rounded-3xl p-8 text-center">
 			<h2 class="text-xl font-bold">No hay resultados</h2>

@@ -1,157 +1,220 @@
 <script lang="ts">
 	import { pageTitle } from '$lib/stores/pageTitle';
-	pageTitle.set('Limpieza y estilo para cada espacio');
+
+	pageTitle.set('Limpieza y Estilo Para Cada Espacio');
 
 	const WHATSAPP_LINK =
-		'https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotización%20para%20resina%20epóxica.';
+		'https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotizaci%C3%B3n%20para%20resina%20ep%C3%B3xica.';
 
-	const slides = [
-		{ id: 'slide1', src: "/img/Vídeo sin título ‐ Hecho con Clipchamp (21).mp4", poster: '/img/types/clinic.jpg' },
-		{ id: 'slide2', src: '/videos/quirofanos.mp4', poster: '/img/types/clinic.jpg' },
-		{ id: 'slide3', src: '/videos/bodega.mp4', poster: '/img/types/industry.jpg' },
-		{ id: 'slide4', src: '/videos/vivienda.mp4', poster: '/img/types/house.webp' }
-	];
+	// Nota: este archivo tiene caracteres especiales. Mejor apuntar con URL codificada.
+	// "Vídeo sin título ‐ Hecho con Clipchamp (21).mp4"
+	const HERO_VIDEO =
+		'/img/V%C3%ADdeo%20sin%20t%C3%ADtulo%20%E2%80%90%20Hecho%20con%20Clipchamp%20%2821%29.mp4';
 </script>
 
 <section class="section section-pad">
-	<div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-		<!-- Texto / CTA -->
-		<div>
-			<div class="inline-flex items-center gap-2 rounded-full border border-base-300/60 bg-base-100/50 px-4 py-2 text-sm text-base-content/80">
-				<span class="badge badge-primary badge-sm">ArquiEpoxy</span>
-				<span class="text-base-content/70">Grado quirúrgico • industrial • alimenticio • deportivo</span>
+	<!-- HERO -->
+	<div class="glass-card rounded-3xl p-6 md:p-8 border border-base-300/40">
+		<div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+			<div>
+				<div class="inline-flex items-center gap-2 rounded-full border border-base-300/60 bg-base-100/40 px-4 py-2 text-sm text-base-content/80">
+					<span class="badge badge-primary badge-sm">ArquiEpoxy</span>
+					<span class="text-base-content/70">Grado quirúrgico • industrial • deportivo</span>
+				</div>
+
+				<h1 class="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">
+					Limpieza y estilo para cada espacio
+				</h1>
+
+				<p class="mt-3 text-base-content/80 leading-relaxed">
+					Aplicación profesional de resina epóxica para hospitales, clínicas, bodegas y proyectos institucionales en
+					Guatemala y Centroamérica. Acabados continuos, resistentes y listos para operación exigente.
+				</p>
+
+				<div class="mt-6 flex flex-col gap-3 sm:flex-row">
+					<a class="btn btn-primary" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+						Cotizar por WhatsApp
+					</a>
+					<a class="btn btn-ghost" href="/projects">Ver proyectos</a>
+				</div>
+
+				<div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+					<div class="rounded-2xl border border-base-300/40 bg-base-100/30 p-4">
+						<div class="text-sm font-semibold">Higiene</div>
+						<div class="text-xs text-base-content/70 mt-1">Superficie sellada y sanitizable</div>
+					</div>
+					<div class="rounded-2xl border border-base-300/40 bg-base-100/30 p-4">
+						<div class="text-sm font-semibold">Resistencia</div>
+						<div class="text-xs text-base-content/70 mt-1">Alto tráfico y químicos</div>
+					</div>
+					<div class="rounded-2xl border border-base-300/40 bg-base-100/30 p-4">
+						<div class="text-sm font-semibold">Presentación</div>
+						<div class="text-xs text-base-content/70 mt-1">Acabado premium e institucional</div>
+					</div>
+				</div>
 			</div>
 
-			<h1 class="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">
-				Aplicación profesional de <span class="text-primary">resina epóxica</span> para entornos exigentes
-			</h1>
-
-			<p class="mt-4 text-base text-base-content/80 leading-relaxed">
-				Superficies continuas, resistentes y fáciles de higienizar para clínicas, hospitales, bodegas,
-				parqueos y proyectos institucionales en Guatemala y Centroamérica.
-			</p>
-
-			<div class="mt-6 flex flex-col gap-3 sm:flex-row">
-				<a class="btn btn-primary" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-					Cotizar por WhatsApp
-				</a>
-				<a class="btn btn-ghost" href="/projects">Ver proyectos</a>
-			</div>
-
-			<div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
-				<div class="glass-card rounded-2xl p-4">
-					<div class="text-sm font-semibold">Higiene</div>
-					<div class="text-xs text-base-content/70 mt-1">Ideal para áreas clínicas y sanitarias.</div>
-				</div>
-				<div class="glass-card rounded-2xl p-4">
-					<div class="text-sm font-semibold">Resistencia</div>
-					<div class="text-xs text-base-content/70 mt-1">Abrasión, químicos y alto tránsito.</div>
-				</div>
-				<div class="glass-card rounded-2xl p-4">
-					<div class="text-sm font-semibold">Presentación</div>
-					<div class="text-xs text-base-content/70 mt-1">Acabado premium de nivel institucional.</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Carousel -->
-		<div class="glass-card rounded-3xl p-4">
-			<div class="carousel w-full h-[320px] md:h-[520px] rounded-2xl overflow-hidden">
-				{#each slides as s, i (s.id)}
-					<div id={s.id} class="carousel-item relative w-full flex justify-center items-center">
-						<video class="w-full h-full object-cover bg-black" controls playsinline preload="metadata" poster={s.poster}>
-							<source src={s.src} type="video/mp4" />
+			<!-- VIDEO CAROUSEL -->
+			<div class="rounded-3xl border border-base-300/40 bg-base-100/20 p-4">
+				<div class="carousel w-full h-[260px] md:h-[420px] rounded-2xl overflow-hidden bg-black">
+					<!-- Slide 1 -->
+					<div id="slide1" class="carousel-item relative w-full flex justify-center items-center">
+						<video class="w-full h-full object-contain bg-black" controls loop playsinline preload="metadata">
+							<source src={HERO_VIDEO} type="video/mp4" />
 							Tu navegador no soporta el elemento de video.
 						</video>
-
 						<div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
-							<a href={`#${slides[(i - 1 + slides.length) % slides.length].id}`} class="btn btn-circle btn-ghost text-white">❮</a>
-							<a href={`#${slides[(i + 1) % slides.length].id}`} class="btn btn-circle btn-ghost text-white">❯</a>
+							<a href="#slide4" class="btn btn-circle btn-sm md:btn-md">❮</a>
+							<a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❯</a>
 						</div>
 					</div>
-				{/each}
+
+					<!-- Slide 2 -->
+					<div id="slide2" class="carousel-item relative w-full flex justify-center items-center">
+						<video class="w-full h-full object-contain bg-black" controls loop playsinline preload="metadata">
+							<source src="/videos/quirofanos.mp4" type="video/mp4" />
+							Tu navegador no soporta el elemento de video.
+						</video>
+						<div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❮</a>
+							<a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❯</a>
+						</div>
+					</div>
+
+					<!-- Slide 3 -->
+					<div id="slide3" class="carousel-item relative w-full flex justify-center items-center">
+						<video class="w-full h-full object-contain bg-black" controls loop playsinline preload="metadata">
+							<source src="/videos/bodega.mp4" type="video/mp4" />
+							Tu navegador no soporta el elemento de video.
+						</video>
+						<div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❮</a>
+							<a href="#slide4" class="btn btn-circle btn-sm md:btn-md">❯</a>
+						</div>
+					</div>
+
+					<!-- Slide 4 -->
+					<div id="slide4" class="carousel-item relative w-full flex justify-center items-center">
+						<video class="w-full h-full object-contain bg-black" controls loop playsinline preload="metadata">
+							<source src="/videos/vivienda.mp4" type="video/mp4" />
+							Tu navegador no soporta el elemento de video.
+						</video>
+						<div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❮</a>
+							<a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❯</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-4 flex flex-wrap items-center gap-2 text-xs text-base-content/70">
+					<span class="badge badge-outline">Clínicas</span>
+					<span class="badge badge-outline">Bodegas</span>
+					<span class="badge badge-outline">Vivienda</span>
+					<span class="badge badge-outline">Institucional</span>
+				</div>
 			</div>
 		</div>
 	</div>
-</section>
 
-<div class="section"><div class="soft-divider"></div></div>
-
-<!-- Cards -->
-<section class="section section-pad">
-	<h2 class="text-3xl font-extrabold tracking-tight text-center">
-		Soluciones por tipo de espacio
-	</h2>
-	<p class="mt-3 text-center text-base-content/80 max-w-3xl mx-auto">
-		Aplicación de resina epóxica para proyectos clínicos, industriales, alimenticios y más.
-	</p>
-
-	<div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-		<div class="glass-card rounded-3xl overflow-hidden">
-			<img src="/img/types/clinic.jpg" alt="clínicas" class="h-56 w-full object-cover" />
-			<div class="p-6">
-				<h3 class="text-xl font-bold">Pisos de clínicas</h3>
-				<p class="mt-2 text-sm text-base-content/80">Higiene, limpieza y acabado continuo para entornos sanitarios.</p>
-				<a class="btn btn-primary btn-sm mt-4" target="_blank" rel="noopener noreferrer"
-					href="https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotización%20para%20Quirófano.">Cotizar</a>
-			</div>
+	<!-- SERVICIOS DESTACADOS -->
+	<div class="mt-12">
+		<div class="flex items-center gap-4">
+			<h2 class="text-2xl font-extrabold">Aplicaciones principales</h2>
+			<div class="soft-divider"></div>
 		</div>
 
-		<div class="glass-card rounded-3xl overflow-hidden">
-			<img src="/img/types/industry.jpg" alt="bodegas" class="h-56 w-full object-cover" />
-			<div class="p-6">
-				<h3 class="text-xl font-bold">Pisos de bodegas</h3>
-				<p class="mt-2 text-sm text-base-content/80">Resistencia industrial para alto tráfico y operación continua.</p>
-				<a class="btn btn-primary btn-sm mt-4" target="_blank" rel="noopener noreferrer"
-					href="https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotización%20para%20piso%20grado%20industrial.">Cotizar</a>
-			</div>
-		</div>
+		<p class="mt-3 text-base-content/80 max-w-3xl leading-relaxed">
+			Sistemas epóxicos diseñados para higiene, resistencia y estética. Enfoque médico-industrial y ejecución profesional.
+		</p>
 
-		<div class="glass-card rounded-3xl overflow-hidden">
-			<img src="/img/types/pitch.jpg" alt="canchas" class="h-56 w-full object-cover" />
-			<div class="p-6">
-				<h3 class="text-xl font-bold">Y más…</h3>
-				<p class="mt-2 text-sm text-base-content/80">Deportivo, alimenticio, paredes, parqueos y acabados especiales.</p>
-				<a class="btn btn-ghost btn-sm mt-4" href="/services">Conocer servicios</a>
+		<div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+			<!-- Clínico -->
+			<div class="card bg-base-100 shadow-sm border border-base-300/40">
+				<figure class="h-[220px] overflow-hidden">
+					<img src="/img/types/clinic.jpg" alt="Pisos clínicos" class="w-full h-full object-cover" />
+				</figure>
+				<div class="card-body">
+					<div class="flex items-center justify-between">
+						<h3 class="card-title">Clínico / Quirúrgico</h3>
+						<span class="badge badge-success">Higiene</span>
+					</div>
+					<p class="text-sm text-base-content/80">
+						Superficie sellada, fácil de sanitizar y lista para protocolos exigentes.
+					</p>
+					<div class="card-actions justify-end">
+						<a
+							class="btn btn-primary btn-sm"
+							href="https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotizaci%C3%B3n%20para%20resina%20ep%C3%B3xica%20grado%20quir%C3%BArgico."
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Cotizar
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Industrial -->
+			<div class="card bg-base-100 shadow-sm border border-base-300/40">
+				<figure class="h-[220px] overflow-hidden">
+					<img src="/img/types/industry.jpg" alt="Pisos industriales" class="w-full h-full object-cover" />
+				</figure>
+				<div class="card-body">
+					<div class="flex items-center justify-between">
+						<h3 class="card-title">Industrial / Alto tráfico</h3>
+						<span class="badge badge-warning">Resistencia</span>
+					</div>
+					<p class="text-sm text-base-content/80">
+						Para bodegas, plantas y áreas operativas: abrasión, químicos y uso continuo.
+					</p>
+					<div class="card-actions justify-end">
+						<a
+							class="btn btn-primary btn-sm"
+							href="https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotizaci%C3%B3n%20para%20resina%20ep%C3%B3xica%20grado%20industrial."
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Cotizar
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Deportivo -->
+			<div class="card bg-base-100 shadow-sm border border-base-300/40">
+				<figure class="h-[220px] overflow-hidden">
+					<img src="/img/types/pitch.jpg" alt="Canchas deportivas" class="w-full h-full object-cover" />
+				</figure>
+				<div class="card-body">
+					<div class="flex items-center justify-between">
+						<h3 class="card-title">Deportivo</h3>
+						<span class="badge badge-info">Desempeño</span>
+					</div>
+					<p class="text-sm text-base-content/80">
+						Superficies técnicas con estética premium: tracción, control y durabilidad.
+					</p>
+					<div class="card-actions justify-end">
+						<a class="btn btn-ghost btn-sm" href="/services">Ver servicios</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</section>
 
-<div class="section"><div class="soft-divider"></div></div>
-
-<!-- Comparación (dark premium) -->
-<section class="section section-pad">
-	<div class="text-center mb-10">
-		<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Resina Epóxica vs Pintura Epóxica</h2>
-		<p class="mt-3 text-base-content/80">Comparación práctica de desempeño para pisos y recubrimientos.</p>
-	</div>
-
-	<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-		<div class="glass-card rounded-3xl p-6 border border-emerald-400/40 bg-emerald-500/10">
-			<div class="flex items-center justify-between">
-				<h3 class="text-2xl font-bold">Resina epóxica</h3>
-				<span class="badge badge-success">Recomendada</span>
+	<!-- CTA -->
+	<div class="mt-12 glass-card rounded-3xl p-8">
+		<div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:items-center">
+			<div class="md:col-span-2">
+				<h2 class="text-2xl font-extrabold">¿Listo para elevar su proyecto?</h2>
+				<p class="mt-2 text-base-content/80">
+					Compártanos ubicación, tipo de área y metraje. Le preparamos una cotización profesional.
+				</p>
 			</div>
-			<ul class="mt-5 space-y-2 text-sm text-base-content/85">
-				<li>✔ Mayor resistencia mecánica y química</li>
-				<li>✔ Continuidad, sellado e higiene superior</li>
-				<li>✔ Mayor vida útil y mejor desempeño en alto tráfico</li>
-				<li>✔ Acabado premium y opciones decorativas</li>
-			</ul>
-			<a class="btn btn-primary btn-sm mt-6" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">Solicitar asesoría</a>
-		</div>
-
-		<div class="glass-card rounded-3xl p-6">
-			<div class="flex items-center justify-between">
-				<h3 class="text-2xl font-bold">Pintura epóxica</h3>
-				<span class="badge badge-ghost">Costo inicial</span>
+			<div class="md:justify-self-end">
+				<a class="btn btn-primary w-full md:w-auto" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+					Cotizar ahora
+				</a>
 			</div>
-			<ul class="mt-5 space-y-2 text-sm text-base-content/85">
-				<li>• Menor espesor y menor resistencia</li>
-				<li>• Reaplicaciones más frecuentes</li>
-				<li>• Adecuada para uso moderado y presupuestos limitados</li>
-			</ul>
 		</div>
 	</div>
 </section>

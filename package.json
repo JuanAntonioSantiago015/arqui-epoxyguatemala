@@ -20,7 +20,7 @@
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"autoprefixer": "^10.4.21",
-		"daisyui": "^5.0.50",
+		"daisyui": "^4.12.24",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
@@ -36,7 +36,6 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@vercel/analytics": "^1.5.0",
-		"daisyui": "^5.0.50"
+		"@vercel/analytics": "^1.5.0"
 	}
 }

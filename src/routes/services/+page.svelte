@@ -4,12 +4,6 @@
 
 	const services = [
 		{
-			title: 'Pisos de quirófano',
-			img: '/img/types/operating-room.jpg',
-			cta: 'Cotizar',
-			href: 'https://wa.me/50255272948?text=Hola,%20necesito%20una%20cotización%20para%20piso%20de%20quirófano.'
-		},
-		{
 			title: 'Pisos de clínicas',
 			img: '/img/types/clinic.jpg',
 			cta: 'Cotizar',

@@ -24,6 +24,7 @@
 		location: string;
 		media: Media;
 		tags: string[];
+		publishedOrder?: number;
 	};
 
 	const unique = (arr: string[]) => Array.from(new Set(arr));
@@ -277,6 +278,26 @@
 			location: 'Mazatenango, Suchitepéquez',
 			media: { kind: 'carousel', fotos: solucionesKarenFotos },
 			tags: ['Clínico', 'Mazatenango', 'Acabado premium']
+		}
+	];
+
+	const latestClinicalVideoProjects: Project[] = [
+		{
+			id: 'v-2026-clinica-totonicapan',
+			year: 2026,
+			category: 'Clínico',
+			title: 'Clínica en Totonicapán: renovación epóxica profesional',
+			subtitle:
+				'Video clínico con recorrido de obra y acabado final en piso epóxico, mostrando una superficie renovada con imagen limpia y preparada para uso institucional.',
+			location: 'Totonicapán, Guatemala',
+			media: {
+				kind: 'video',
+				src: '/videos/clinicas/clinica-totonicapan-piso-epoxico.mp4',
+				poster: '/videos/clinicas/posters/clinica-totonicapan-piso-epoxico.jpg',
+				posterAlt: 'Poster de piso epóxico azul en una clínica de Totonicapán'
+			},
+			tags: ['Clínico', 'Totonicapán', 'Hospitalario', 'Acabado epóxico'],
+			publishedOrder: 20260802
 		}
 	];
 
@@ -812,22 +833,6 @@
 			tags: ['Publicidad', 'Aplicación', 'Piso azul', 'Acabado brillante']
 		},
 		{
-			id: 'pub-2026-renovacion-hospitalaria-totonicapan',
-			year: 2026,
-			category: 'Publicidad',
-			title: 'Renovación hospitalaria en Totonicapán',
-			subtitle:
-				'Recorrido de un área hospitalaria en Totonicapán donde se observa trabajo de piso epóxico y una superficie renovada para mejorar imagen y funcionalidad.',
-			location: 'Video publicitario',
-			media: {
-				kind: 'video',
-				src: '/videos/publicidad/renovacion-hospitalaria-totonicapan.mp4',
-				poster: '/videos/publicidad/posters/renovacion-hospitalaria-totonicapan.jpg',
-				posterAlt: 'Poster de renovación hospitalaria con piso epóxico en Totonicapán'
-			},
-			tags: ['Publicidad', 'Hospitalario', 'Totonicapán', 'Renovación']
-		},
-		{
 			id: 'pub-2026-resultados-clinicos-institucionales',
 			year: 2026,
 			category: 'Publicidad',
@@ -927,6 +932,7 @@
 
 	const allProjects: Project[] = [
 		...galleryProjects,
+		...latestClinicalVideoProjects,
 		...videoProjects,
 		...publicidadVideoProjects,
 		...specials
@@ -937,6 +943,7 @@
 	let yearFilter: 'Todos' | '2026' | '2025' = 'Todos';
 	let categoryFilter: 'Todas' | Project['category'] = 'Todas';
 	let sort: 'Recientes primero' | 'Antiguos primero' | 'A-Z' = 'Recientes primero';
+	let activeVideoId: string | null = null;
 
 	const yearOptions = ['Todos', '2026', '2025'] as const;
 	const categoryOptions = unique(['Todas', ...allProjects.map((p) => p.category)]) as Array<
@@ -964,8 +971,18 @@
 		})
 		.sort((a, b) => {
 			if (sort === 'A-Z') return a.title.localeCompare(b.title);
-			if (sort === 'Antiguos primero') return a.year - b.year || a.title.localeCompare(b.title);
-			return b.year - a.year || a.title.localeCompare(b.title);
+			if (sort === 'Antiguos primero') {
+				return (
+					a.year - b.year ||
+					(a.publishedOrder ?? 0) - (b.publishedOrder ?? 0) ||
+					a.title.localeCompare(b.title)
+				);
+			}
+			return (
+				b.year - a.year ||
+				(b.publishedOrder ?? 0) - (a.publishedOrder ?? 0) ||
+				a.title.localeCompare(b.title)
+			);
 		});
 
 	$: grouped = filtered.reduce(
@@ -986,6 +1003,13 @@
 		if (cat === 'Publicidad') return 'badge-secondary';
 		if (cat === 'Institucional') return 'badge-primary';
 		return 'badge-ghost';
+	};
+
+	const pauseOtherVideos = (event: Event) => {
+		const current = event.currentTarget as HTMLVideoElement;
+		document.querySelectorAll('video').forEach((video) => {
+			if (video !== current) video.pause();
+		});
 	};
 </script>
 
@@ -1102,6 +1126,27 @@
 							<figure class="relative">
 								{#if p.media.kind === 'carousel'}
 									<Carousel fotos={p.media.fotos} id={p.id} />
+								{:else if p.media.poster && activeVideoId !== p.id}
+									<button
+										type="button"
+										class="group relative flex h-[260px] w-full items-center justify-center overflow-hidden rounded-2xl bg-black md:h-[448px]"
+										aria-label={`Reproducir ${p.title}`}
+										on:click={() => (activeVideoId = p.id)}
+									>
+										<img
+											src={p.media.poster}
+											alt={p.media.posterAlt ?? `Poster del video ${p.title}`}
+											class="h-full w-full object-contain"
+											loading="lazy"
+											decoding="async"
+										/>
+										<span
+											class="absolute grid h-16 w-16 place-items-center rounded-full border border-white/30 bg-black/60 text-3xl text-white shadow-lg backdrop-blur-md transition group-hover:scale-105 group-hover:bg-primary"
+											aria-hidden="true"
+										>
+											▶
+										</span>
+									</button>
 								{:else}
 									<div
 										class="flex h-[260px] w-full items-center justify-center overflow-hidden rounded-2xl bg-black md:h-[448px]"
@@ -1111,9 +1156,11 @@
 											class="h-full w-full object-contain"
 											controls
 											playsinline
-											preload="metadata"
+											preload={p.media.poster ? 'none' : 'metadata'}
 											poster={p.media.poster}
+											autoplay={activeVideoId === p.id}
 											aria-label={p.media.posterAlt ?? `Video del proyecto ${p.title}`}
+											on:play={pauseOtherVideos}
 										>
 											<source src={p.media.src} type="video/mp4" />
 											Tu navegador no soporta video HTML5.

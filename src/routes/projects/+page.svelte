@@ -6,12 +6,19 @@
 
 	type Media =
 		| { kind: 'carousel'; fotos: string[] }
-		| { kind: 'video'; src: string; poster?: string };
+		| { kind: 'video'; src: string; poster?: string; posterAlt?: string };
 
 	type Project = {
 		id: string;
 		year: number;
-		category: 'Clínico' | 'Industrial' | 'Deportivo' | 'Publicitario' | 'Institucional' | 'General';
+		category:
+			| 'Clínico'
+			| 'Industrial'
+			| 'Deportivo'
+			| 'Publicitario'
+			| 'Publicidad'
+			| 'Institucional'
+			| 'General';
 		title: string;
 		subtitle: string;
 		location: string;
@@ -28,7 +35,8 @@
 			year: 2025,
 			category: 'Deportivo',
 			title: 'Cancha deportiva con desempeño profesional',
-			subtitle: 'Superficie uniforme y resistente para alto uso: control, tracción y presentación premium.',
+			subtitle:
+				'Superficie uniforme y resistente para alto uso: control, tracción y presentación premium.',
 			location: 'Santa Rosa, Guatemala',
 			media: {
 				kind: 'carousel',
@@ -60,7 +68,8 @@
 			year: 2025,
 			category: 'Deportivo',
 			title: 'Cancha deportiva en San Salvador',
-			subtitle: 'Resina epóxica grado deportivo: resistencia, estética y desempeño de nivel institucional.',
+			subtitle:
+				'Resina epóxica grado deportivo: resistencia, estética y desempeño de nivel institucional.',
 			location: 'San Salvador, El Salvador',
 			media: {
 				kind: 'carousel',
@@ -80,7 +89,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Hospital privado: acabado clínico de alto nivel',
-			subtitle: 'Superficie sellada, resistente y diseñada para limpieza rápida y control sanitario.',
+			subtitle:
+				'Superficie sellada, resistente y diseñada para limpieza rápida y control sanitario.',
 			location: 'El Alto, Guatemala',
 			media: {
 				kind: 'carousel',
@@ -100,7 +110,8 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Hospital Nueva Esperanza: higiene y durabilidad',
-			subtitle: 'Recubrimiento pensado para operación diaria: limpieza eficiente y resistencia real.',
+			subtitle:
+				'Recubrimiento pensado para operación diaria: limpieza eficiente y resistencia real.',
 			location: 'Sololá, Guatemala',
 			media: {
 				kind: 'carousel',
@@ -167,7 +178,8 @@
 			year: 2025,
 			category: 'Institucional',
 			title: 'Proyecto regional: El Salvador',
-			subtitle: 'Aplicación con enfoque institucional: resistencia, presentación y control de limpieza.',
+			subtitle:
+				'Aplicación con enfoque institucional: resistencia, presentación y control de limpieza.',
 			location: 'El Salvador, Centro América',
 			media: {
 				kind: 'carousel',
@@ -274,7 +286,8 @@
 			year: 2025,
 			category: 'Institucional',
 			title: 'Petén: proyecto en ejecución con estándar profesional',
-			subtitle: 'Superficie lista para operación: resistencia, limpieza y presentación institucional.',
+			subtitle:
+				'Superficie lista para operación: resistencia, limpieza y presentación institucional.',
 			location: 'Petén, Guatemala',
 			media: { kind: 'video', src: '/videos/peten.mp4' },
 			tags: ['Institucional', 'Petén']
@@ -305,8 +318,7 @@
 			year: 2025,
 			category: 'Clínico',
 			title: 'Sanatorio Centro Médico Jalapaneco',
-			subtitle:
-				'Acabado clínico de alto desempeño con control sanitario y fácil mantenimiento.',
+			subtitle: 'Acabado clínico de alto desempeño con control sanitario y fácil mantenimiento.',
 			location: 'Jalapa, Guatemala',
 			media: { kind: 'video', src: '/videos/Sanatorio-Centro-Medico-Jalapaneco.mp4' },
 			tags: ['Clínico', 'Jalapa']
@@ -358,8 +370,7 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Grado quirúrgico en acción',
-			subtitle:
-				'Higiene, brillo y seguridad en cada paso: superficie sellada de alto nivel.',
+			subtitle: 'Higiene, brillo y seguridad en cada paso: superficie sellada de alto nivel.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitario1.mp4' },
 			tags: ['Publicitario', 'Grado quirúrgico']
@@ -369,8 +380,7 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Grado industrial para alto tráfico',
-			subtitle:
-				'Solución para bodegas, plantas y parqueos: resistencia y limpieza eficiente.',
+			subtitle: 'Solución para bodegas, plantas y parqueos: resistencia y limpieza eficiente.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitariogradoindustrial.mp4' },
 			tags: ['Publicitario', 'Industrial']
@@ -380,8 +390,7 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Recomendado por profesionales de la salud',
-			subtitle:
-				'Confianza clínica respaldada por resultados: superficies diseñadas para higiene.',
+			subtitle: 'Confianza clínica respaldada por resultados: superficies diseñadas para higiene.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitarioiadoctora.mp4' },
 			tags: ['Publicitario', 'Clínico']
@@ -391,8 +400,7 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Brillo, higiene y resistencia en un solo piso',
-			subtitle:
-				'Transformación real con resina epóxica de alto desempeño para entornos exigentes.',
+			subtitle: 'Transformación real con resina epóxica de alto desempeño para entornos exigentes.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/videopublicitariodiciembre.mp4' },
 			tags: ['Publicitario', 'Institucional']
@@ -402,8 +410,7 @@
 			year: 2025,
 			category: 'Deportivo',
 			title: 'San José, Costa Rica: grado deportivo',
-			subtitle:
-				'Superficie técnica para canchas: desempeño, resistencia y acabado profesional.',
+			subtitle: 'Superficie técnica para canchas: desempeño, resistencia y acabado profesional.',
 			location: 'San José, Costa Rica',
 			media: { kind: 'video', src: '/videos/canchabasquet-CostaRica.mp4' },
 			tags: ['Deportivo', 'Centroamérica']
@@ -413,8 +420,7 @@
 			year: 2025,
 			category: 'Publicitario',
 			title: 'Cumplimiento y confianza: enfoque MSPAS',
-			subtitle:
-				'Calidad, higiene y procesos profesionales para proyectos institucionales.',
+			subtitle: 'Calidad, higiene y procesos profesionales para proyectos institucionales.',
 			location: 'Video publicitario',
 			media: { kind: 'video', src: '/videos/Campana-ia2.mp4' },
 			tags: ['Publicitario', 'MSPAS']
@@ -457,8 +463,7 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Poptún: proyecto institucional en Petén',
-			subtitle:
-				'Resistencia y limpieza para operación continua con acabado profesional.',
+			subtitle: 'Resistencia y limpieza para operación continua con acabado profesional.',
 			location: 'Petén, Guatemala',
 			media: { kind: 'video', src: '/videos/PoptunPeten.mp4' },
 			tags: ['Institucional', 'Petén']
@@ -468,8 +473,7 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Ciudad de Guatemala: ejecución profesional',
-			subtitle:
-				'Superficie uniforme, sellada y lista para uso exigente con estética premium.',
+			subtitle: 'Superficie uniforme, sellada y lista para uso exigente con estética premium.',
 			location: 'Guatemala',
 			media: { kind: 'video', src: '/videos/CiudadDeGuatemala.mp4' },
 			tags: ['Institucional', 'Ciudad de Guatemala']
@@ -522,10 +526,9 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Terraza en Ciudad de Guatemala: acabado premium',
-			subtitle:
-				'Aplicación profesional: superficie uniforme, sellada y lista para uso exigente.',
+			subtitle: 'Aplicación profesional: superficie uniforme, sellada y lista para uso exigente.',
 			location: 'Ciudad de Guatemala, Guatemala',
-			media: { kind: 'video', src: '/videos/videoaplicacionaterrazaciudaddguatemala.mp4' },
+			media: { kind: 'video', src: '/videos/videoaplicacionaterrazaciudaddeguatemala.mp4' },
 			tags: ['Institucional', 'Ciudad de Guatemala']
 		},
 		{
@@ -533,8 +536,7 @@
 			year: 2026,
 			category: 'Industrial',
 			title: 'Bodega Quiché: entrega final para alto tráfico',
-			subtitle:
-				'Resistencia a abrasión y limpieza eficiente para operación continua.',
+			subtitle: 'Resistencia a abrasión y limpieza eficiente para operación continua.',
 			location: 'Quiché, Guatemala',
 			media: { kind: 'video', src: '/videos/videofinalbodegaquiche.mp4' },
 			tags: ['Industrial', 'Quiché', 'Bodega']
@@ -544,8 +546,7 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Además de resistencia: la resina también impermeabiliza',
-			subtitle:
-				'Sellado de superficie para control de humedad y mantenimiento más simple.',
+			subtitle: 'Sellado de superficie para control de humedad y mantenimiento más simple.',
 			location: 'Video informativo',
 			media: { kind: 'video', src: '/videos/laresinatambienimpermeabiliza.mp4' },
 			tags: ['Informativo', 'Protección']
@@ -555,8 +556,7 @@
 			year: 2026,
 			category: 'Industrial',
 			title: 'Bodega Quiché: avance con estándar industrial',
-			subtitle:
-				'Nivelación, adherencia y desempeño para trabajo pesado sin sorpresas.',
+			subtitle: 'Nivelación, adherencia y desempeño para trabajo pesado sin sorpresas.',
 			location: 'Quiché, Guatemala',
 			media: { kind: 'video', src: '/videos/bodegaquiche.mp4' },
 			tags: ['Industrial', 'Bodega', 'Quiché']
@@ -566,8 +566,7 @@
 			year: 2026,
 			category: 'Institucional',
 			title: 'Antigua Guatemala: presencia premium, desempeño real',
-			subtitle:
-				'Superficie limpia, resistente y con acabado institucional de alto nivel.',
+			subtitle: 'Superficie limpia, resistente y con acabado institucional de alto nivel.',
 			location: 'Antigua Guatemala, Guatemala',
 			media: { kind: 'video', src: '/videos/videoantiguaguatemala.mp4' },
 			tags: ['Institucional', 'Antigua Guatemala']
@@ -578,16 +577,360 @@
 			id: 'v-2026-hospital-herrera-llerandi',
 			year: 2026,
 			category: 'Clínico',
-			title: 'Hospital Herrera Llerandi: excelencia clínica en cada detalle',
+			title: 'Hospital General de Enfermedades del IGSS',
 			subtitle:
-				'Resina epóxica grado quirúrgico: higiene superior, resistencia y una presentación institucional impecable.',
+				'Superficie clínica con acabado institucional: higiene visual, resistencia y una presentación impecable.',
 			location: 'Ciudad de Guatemala, Guatemala',
-			media: { kind: 'video', src: '/videos/HospitalHerreraLlerandiCiudadDeGuatemala.mp4' },
+			media: { kind: 'video', src: '/videos/Hospital-General-De-Enfermedades-Del-Iggs.mp4' },
 			tags: ['Clínico', 'Hospital', 'Ciudad de Guatemala', 'Higiene', 'Acabado premium']
 		}
 	];
 
-	const allProjects: Project[] = [...galleryProjects, ...videoProjects, ...specials];
+	const publicidadVideoProjects: Project[] = [
+		{
+			id: 'pub-2026-piso-epoxico-azul-hospitalario',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Piso epóxico azul para entorno hospitalario',
+			subtitle:
+				'Recorrido de una superficie azul brillante y continua en un área hospitalaria, con acabado uniforme que proyecta limpieza, orden y alto impacto visual.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/piso-epoxico-azul-hospitalario.mp4',
+				poster: '/videos/publicidad/posters/piso-epoxico-azul-hospitalario.jpg',
+				posterAlt: 'Poster de piso epóxico azul brillante en un área hospitalaria'
+			},
+			tags: ['Publicidad', 'Clínico', 'Piso azul', 'Acabado brillante']
+		},
+		{
+			id: 'pub-2026-pisos-epoxicos-clinicas',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Publicidad para clínicas modernas',
+			subtitle:
+				'Pieza comercial que presenta pisos epóxicos como una solución moderna para clínicas, con enfoque en imagen profesional, superficies limpias y mantenimiento práctico.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/publicidad-pisos-epoxicos-clinicas.mp4',
+				poster: '/videos/publicidad/posters/publicidad-pisos-epoxicos-clinicas.jpg',
+				posterAlt: 'Poster publicitario de pisos epóxicos para clínicas modernas'
+			},
+			tags: ['Publicidad', 'Clínico', 'Informativo', 'Pisos epóxicos']
+		},
+		{
+			id: 'pub-2026-aplicacion-area-comercial',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Aplicación epóxica en área de trabajo',
+			subtitle:
+				'Proceso de aplicación sobre una superficie interior donde se aprecia preparación, detalle y acabado uniforme para transformar áreas de uso comercial con una imagen más limpia.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/aplicacion-epoxica-area-comercial.mp4',
+				poster: '/videos/publicidad/posters/aplicacion-epoxica-area-comercial.jpg',
+				posterAlt: 'Poster de aplicación epóxica en una superficie interior comercial'
+			},
+			tags: ['Publicidad', 'Aplicación', 'Área comercial', 'Acabado uniforme']
+		},
+		{
+			id: 'pub-2026-transformacion-centro-medico',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Transformación para centro médico',
+			subtitle:
+				'Recorrido de un espacio médico con piso claro y brillante, mostrando una superficie continua que mejora la presentación del área y facilita una percepción de orden.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/transformacion-centro-medico-epoxico.mp4',
+				poster: '/videos/publicidad/posters/transformacion-centro-medico-epoxico.jpg',
+				posterAlt: 'Poster de un centro médico con piso epóxico claro y brillante'
+			},
+			tags: ['Publicidad', 'Clínico', 'Centro médico', 'Superficie continua']
+		},
+		{
+			id: 'pub-2026-escaleras-piso-azul',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Escaleras y piso azul de alto impacto',
+			subtitle:
+				'Acabado epóxico azul en escaleras y área interior, ideal para renovar espacios de alto tránsito con brillo, presencia visual y una apariencia fácil de mantener.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/escaleras-piso-azul-epoxico.mp4',
+				poster: '/videos/publicidad/posters/escaleras-piso-azul-epoxico.jpg',
+				posterAlt: 'Poster de escaleras y piso azul con acabado epóxico brillante'
+			},
+			tags: ['Publicidad', 'Piso azul', 'Escaleras', 'Alto tránsito']
+		},
+		{
+			id: 'pub-2026-acabado-decorativo-comercial',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Acabado decorativo para imagen comercial',
+			subtitle:
+				'Muestra de preparación y acabado decorativo con terminación brillante, pensada para espacios que buscan diferenciarse con una superficie moderna y llamativa.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/acabado-decorativo-comercial-epoxico.mp4',
+				poster: '/videos/publicidad/posters/acabado-decorativo-comercial-epoxico.jpg',
+				posterAlt: 'Poster de preparación de acabado epóxico decorativo para un espacio comercial'
+			},
+			tags: ['Publicidad', 'Decorativo', 'Comercial', 'Brillo']
+		},
+		{
+			id: 'pub-2026-portafolio-clinico-piso-azul',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Portafolio clínico en azul brillante',
+			subtitle:
+				'Compilación visual de áreas clínicas con pisos azules continuos, resaltando limpieza, orden y una presentación profesional para entornos exigentes.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/portafolio-clinico-piso-azul.mp4',
+				poster: '/videos/publicidad/posters/portafolio-clinico-piso-azul.jpg',
+				posterAlt: 'Poster de varias áreas clínicas con pisos epóxicos azules'
+			},
+			tags: ['Publicidad', 'Clínico', 'Portafolio', 'Piso azul']
+		},
+		{
+			id: 'pub-2026-muestra-epoxica-morada',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Muestra epóxica morada brillante',
+			subtitle:
+				'Demostración de una muestra epóxica de alto brillo que evidencia color, reflejo y acabado uniforme para proyectos con una propuesta visual personalizada.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/muestra-epoxica-morada-brillante.mp4',
+				poster: '/videos/publicidad/posters/muestra-epoxica-morada-brillante.jpg',
+				posterAlt: 'Poster de una muestra epóxica morada con brillo reflectivo'
+			},
+			tags: ['Publicidad', 'Muestra', 'Color', 'Acabado brillante']
+		},
+		{
+			id: 'pub-2026-testimonio-acabado-hospitalario',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Testimonio sobre acabado hospitalario',
+			subtitle:
+				'Video testimonial dentro de un entorno hospitalario que destaca la percepción profesional del acabado y la confianza que transmite una superficie bien ejecutada.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/testimonio-acabado-hospitalario.mp4',
+				poster: '/videos/publicidad/posters/testimonio-acabado-hospitalario.jpg',
+				posterAlt: 'Poster de un testimonio en un entorno hospitalario con acabado epóxico'
+			},
+			tags: ['Publicidad', 'Testimonio', 'Hospitalario', 'Clínico']
+		},
+		{
+			id: 'pub-2026-testimonio-imagen-comercial',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Presencia comercial con acabado premium',
+			subtitle:
+				'Pieza testimonial enfocada en imagen de marca y espacios comerciales, reforzando el valor de un piso epóxico como parte de una presentación moderna.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/testimonio-imagen-comercial-premium.mp4',
+				poster: '/videos/publicidad/posters/testimonio-imagen-comercial-premium.jpg',
+				posterAlt: 'Poster de una pieza testimonial sobre imagen comercial y acabados premium'
+			},
+			tags: ['Publicidad', 'Testimonio', 'Comercial', 'Imagen premium']
+		},
+		{
+			id: 'pub-2026-recorrido-zona-medica',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Recorrido Zona Médica con piso azul',
+			subtitle:
+				'Recorrido por interiores con acabado epóxico azul, mostrando continuidad visual, brillo y una apariencia limpia para espacios médicos o profesionales.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/recorrido-zona-medica-piso-azul.mp4',
+				poster: '/videos/publicidad/posters/recorrido-zona-medica-piso-azul.jpg',
+				posterAlt: 'Poster de un recorrido interior con piso epóxico azul en zona médica'
+			},
+			tags: ['Publicidad', 'Clínico', 'Piso azul', 'Recorrido']
+		},
+		{
+			id: 'pub-2026-clinica-renovada-brillo-azul',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Clínica renovada con brillo azul',
+			subtitle:
+				'Secuencia publicitaria con preparación y resultado final en una sala clínica, donde el piso azul aporta una imagen higiénica, ordenada y contemporánea.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/clinica-renovada-brillo-azul.mp4',
+				poster: '/videos/publicidad/posters/clinica-renovada-brillo-azul.jpg',
+				posterAlt: 'Poster de sala clínica renovada con piso epóxico azul brillante'
+			},
+			tags: ['Publicidad', 'Clínico', 'Renovación', 'Piso azul']
+		},
+		{
+			id: 'pub-2026-normativa-pisos-clinicas',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Normativa y pisos para clínicas',
+			subtitle:
+				'Material comercial informativo que comunica beneficios de pisos epóxicos para clínicas, reforzando una solución visualmente limpia, moderna y orientada a mantenimiento.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/normativa-pisos-epoxicos-clinicas.mp4',
+				poster: '/videos/publicidad/posters/normativa-pisos-epoxicos-clinicas.jpg',
+				posterAlt: 'Poster informativo sobre pisos epóxicos para clínicas'
+			},
+			tags: ['Publicidad', 'Clínico', 'Informativo', 'Normativa']
+		},
+		{
+			id: 'pub-2026-aplicacion-profesional-piso-azul',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Aplicación profesional en piso azul',
+			subtitle:
+				'Proceso de preparación y aplicación de recubrimiento azul, mostrando atención al detalle y un acabado brillante que eleva la presentación del espacio.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/aplicacion-profesional-piso-azul.mp4',
+				poster: '/videos/publicidad/posters/aplicacion-profesional-piso-azul.jpg',
+				posterAlt: 'Poster de aplicación profesional de piso epóxico azul'
+			},
+			tags: ['Publicidad', 'Aplicación', 'Piso azul', 'Acabado brillante']
+		},
+		{
+			id: 'pub-2026-renovacion-hospitalaria-totonicapan',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Renovación hospitalaria en Totonicapán',
+			subtitle:
+				'Recorrido de un área hospitalaria en Totonicapán donde se observa trabajo de piso epóxico y una superficie renovada para mejorar imagen y funcionalidad.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/renovacion-hospitalaria-totonicapan.mp4',
+				poster: '/videos/publicidad/posters/renovacion-hospitalaria-totonicapan.jpg',
+				posterAlt: 'Poster de renovación hospitalaria con piso epóxico en Totonicapán'
+			},
+			tags: ['Publicidad', 'Hospitalario', 'Totonicapán', 'Renovación']
+		},
+		{
+			id: 'pub-2026-resultados-clinicos-institucionales',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Resultados clínicos e institucionales',
+			subtitle:
+				'Compilación de espacios terminados con pisos azules brillantes, ideal para mostrar cómo el acabado epóxico transforma áreas clínicas e institucionales.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/resultados-clinicos-institucionales.mp4',
+				poster: '/videos/publicidad/posters/resultados-clinicos-institucionales.jpg',
+				posterAlt: 'Poster de resultados clínicos e institucionales con pisos epóxicos azules'
+			},
+			tags: ['Publicidad', 'Clínico', 'Institucional', 'Resultados']
+		},
+		{
+			id: 'pub-2026-aplicacion-rodillo-acabado-azul',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Aplicación con rodillo, acabado azul',
+			subtitle:
+				'Proceso de aplicación con rodillo donde el color azul gana uniformidad y brillo, mostrando una transformación clara hacia una superficie moderna y profesional.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/aplicacion-rodillo-acabado-azul.mp4',
+				poster: '/videos/publicidad/posters/aplicacion-rodillo-acabado-azul.jpg',
+				posterAlt: 'Poster de aplicación con rodillo de acabado epóxico azul'
+			},
+			tags: ['Publicidad', 'Aplicación', 'Rodillo', 'Piso azul']
+		},
+		{
+			id: 'pub-2026-aplicacion-hospital-privado',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Aplicación epóxica en hospital privado',
+			subtitle:
+				'Proceso de instalación en un entorno hospitalario, con preparación y acabado azul brillante que aportan limpieza visual y una imagen más profesional.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/aplicacion-epoxica-hospital-privado.mp4',
+				poster: '/videos/publicidad/posters/aplicacion-epoxica-hospital-privado.jpg',
+				posterAlt: 'Poster de aplicación epóxica en un entorno hospitalario privado'
+			},
+			tags: ['Publicidad', 'Hospitalario', 'Aplicación', 'Piso azul']
+		},
+		{
+			id: 'pub-2026-publicidad-clinicas-hospitales',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Publicidad para clínicas y hospitales',
+			subtitle:
+				'Pieza gráfica enfocada en clínicas y hospitales, comunicando una solución epóxica para renovar espacios con estética, limpieza y durabilidad percibida.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/publicidad-clinicas-hospitales.mp4',
+				poster: '/videos/publicidad/posters/publicidad-clinicas-hospitales.jpg',
+				posterAlt: 'Poster publicitario de pisos epóxicos para clínicas y hospitales'
+			},
+			tags: ['Publicidad', 'Clínico', 'Hospitales', 'Informativo']
+		},
+		{
+			id: 'pub-2026-preparacion-area-hospitalaria',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Preparación y acabado en área hospitalaria',
+			subtitle:
+				'Secuencia de preparación de superficie y aplicación de acabado azul, mostrando el proceso que permite obtener un resultado uniforme y de alto impacto.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/preparacion-acabado-area-hospitalaria.mp4',
+				poster: '/videos/publicidad/posters/preparacion-acabado-area-hospitalaria.jpg',
+				posterAlt: 'Poster de preparación y acabado epóxico azul en un área hospitalaria'
+			},
+			tags: ['Publicidad', 'Preparación', 'Hospitalario', 'Piso azul']
+		},
+		{
+			id: 'pub-2026-proteccion-hospitalaria',
+			year: 2026,
+			category: 'Publicidad',
+			title: 'Protección visual para espacios hospitalarios',
+			subtitle:
+				'Contenido informativo con enfoque hospitalario que presenta el piso epóxico como una alternativa moderna para áreas que requieren limpieza y presentación cuidada.',
+			location: 'Video publicitario',
+			media: {
+				kind: 'video',
+				src: '/videos/publicidad/proteccion-visual-espacios-hospitalarios.mp4',
+				poster: '/videos/publicidad/posters/proteccion-visual-espacios-hospitalarios.jpg',
+				posterAlt: 'Poster informativo sobre protección visual en espacios hospitalarios'
+			},
+			tags: ['Publicidad', 'Hospitalario', 'Informativo', 'Protección']
+		}
+	];
+
+	const allProjects: Project[] = [
+		...galleryProjects,
+		...videoProjects,
+		...publicidadVideoProjects,
+		...specials
+	];
 
 	// ====== UI State ======
 	let query = '';
@@ -614,7 +957,9 @@
 			const q = normalize(query.trim());
 			if (!q) return true;
 
-			const haystack = normalize([p.title, p.subtitle, p.location, p.category, ...p.tags].join(' '));
+			const haystack = normalize(
+				[p.title, p.subtitle, p.location, p.category, ...p.tags].join(' ')
+			);
 			return haystack.includes(q);
 		})
 		.sort((a, b) => {
@@ -623,18 +968,22 @@
 			return b.year - a.year || a.title.localeCompare(b.title);
 		});
 
-	$: grouped = filtered.reduce((acc, p) => {
-		const key = String(p.year);
-		acc[key] = acc[key] || [];
-		acc[key].push(p);
-		return acc;
-	}, {} as Record<string, Project[]>);
+	$: grouped = filtered.reduce(
+		(acc, p) => {
+			const key = String(p.year);
+			acc[key] = acc[key] || [];
+			acc[key].push(p);
+			return acc;
+		},
+		{} as Record<string, Project[]>
+	);
 
 	const badgeFor = (cat: Project['category']) => {
 		if (cat === 'Clínico') return 'badge-success';
 		if (cat === 'Industrial') return 'badge-warning';
 		if (cat === 'Deportivo') return 'badge-info';
 		if (cat === 'Publicitario') return 'badge-secondary';
+		if (cat === 'Publicidad') return 'badge-secondary';
 		if (cat === 'Institucional') return 'badge-primary';
 		return 'badge-ghost';
 	};
@@ -642,24 +991,31 @@
 
 <section class="section section-pad">
 	<header class="max-w-4xl">
-		<div class="inline-flex items-center gap-2 rounded-full border border-base-300/60 bg-base-100/50 px-4 py-2 text-sm text-base-content/80">
+		<div
+			class="inline-flex items-center gap-2 rounded-full border border-base-300/60 bg-base-100/50 px-4 py-2 text-sm text-base-content/80"
+		>
 			<span class="badge badge-primary badge-sm">Portafolio</span>
-			<span class="text-base-content/70">Clínico • Industrial • Deportivo • Institucional</span>
+			<span class="text-base-content/70"
+				>Clínico • Industrial • Deportivo • Institucional • Publicidad</span
+			>
 		</div>
 
 		<h1 class="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">Proyectos</h1>
 		<p class="mt-3 text-base-content/80 leading-relaxed">
-			Seleccione por año, categoría o busque por ubicación/proyecto. Cada card incluye evidencia visual y un enfoque
-			comercial alineado a calidad, higiene, resistencia y profesionalismo.
+			Seleccione por año, categoría o busque por ubicación/proyecto. Cada card incluye evidencia
+			visual y un enfoque comercial alineado a calidad, higiene, resistencia y profesionalismo.
 		</p>
 	</header>
 
 	<div class="mt-8 glass-card rounded-3xl p-5">
 		<div class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:items-end">
 			<div class="lg:col-span-6">
-				<label class="text-sm font-semibold text-base-content/80">Buscar</label>
+				<label for="projects-search" class="text-sm font-semibold text-base-content/80"
+					>Buscar</label
+				>
 				<div class="mt-2 join w-full">
 					<input
+						id="projects-search"
 						class="input input-bordered join-item w-full bg-base-100/40"
 						placeholder="Ej: IGSS, Quiché, clínica, bodega, Antigua, San Salvador…"
 						bind:value={query}
@@ -671,8 +1027,12 @@
 			</div>
 
 			<div class="lg:col-span-2">
-				<label class="text-sm font-semibold text-base-content/80">Año</label>
-				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={yearFilter}>
+				<label for="projects-year" class="text-sm font-semibold text-base-content/80">Año</label>
+				<select
+					id="projects-year"
+					class="select select-bordered w-full mt-2 bg-base-100/40"
+					bind:value={yearFilter}
+				>
 					{#each yearOptions as y (y)}
 						<option value={y}>{y}</option>
 					{/each}
@@ -680,8 +1040,14 @@
 			</div>
 
 			<div class="lg:col-span-2">
-				<label class="text-sm font-semibold text-base-content/80">Categoría</label>
-				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={categoryFilter}>
+				<label for="projects-category" class="text-sm font-semibold text-base-content/80"
+					>Categoría</label
+				>
+				<select
+					id="projects-category"
+					class="select select-bordered w-full mt-2 bg-base-100/40"
+					bind:value={categoryFilter}
+				>
 					{#each categoryOptions as c (c)}
 						<option value={c}>{c}</option>
 					{/each}
@@ -689,8 +1055,12 @@
 			</div>
 
 			<div class="lg:col-span-2">
-				<label class="text-sm font-semibold text-base-content/80">Orden</label>
-				<select class="select select-bordered w-full mt-2 bg-base-100/40" bind:value={sort}>
+				<label for="projects-sort" class="text-sm font-semibold text-base-content/80">Orden</label>
+				<select
+					id="projects-sort"
+					class="select select-bordered w-full mt-2 bg-base-100/40"
+					bind:value={sort}
+				>
 					<option>Recientes primero</option>
 					<option>Antiguos primero</option>
 					<option>A-Z</option>
@@ -733,15 +1103,22 @@
 								{#if p.media.kind === 'carousel'}
 									<Carousel fotos={p.media.fotos} id={p.id} />
 								{:else}
-									<video
-										class="w-full h-[260px] md:h-[448px] object-cover rounded-2xl"
-										controls
-										playsinline
-										preload="metadata"
+									<div
+										class="flex h-[260px] w-full items-center justify-center overflow-hidden rounded-2xl bg-black md:h-[448px]"
 									>
-										<source src={p.media.src} type="video/mp4" />
-										Tu navegador no soporta video HTML5.
-									</video>
+										<!-- svelte-ignore a11y_media_has_caption (Videos promocionales sin dialogo imprescindible; la reproduccion requiere accion del usuario y mantiene controles nativos.) -->
+										<video
+											class="h-full w-full object-contain"
+											controls
+											playsinline
+											preload="metadata"
+											poster={p.media.poster}
+											aria-label={p.media.posterAlt ?? `Video del proyecto ${p.title}`}
+										>
+											<source src={p.media.src} type="video/mp4" />
+											Tu navegador no soporta video HTML5.
+										</video>
+									</div>
 								{/if}
 
 								<div class="absolute top-3 left-3">
@@ -789,8 +1166,8 @@
 			<div class="md:col-span-2">
 				<h2 class="text-2xl font-extrabold">¿Quiere un piso con estándar institucional?</h2>
 				<p class="mt-2 text-base-content/80">
-					Díganos su ubicación, tipo de área (clínico/industrial/deportivo/alimenticio) y metraje. Le preparamos una
-					cotización profesional.
+					Díganos su ubicación, tipo de área (clínico/industrial/deportivo/alimenticio) y metraje.
+					Le preparamos una cotización profesional.
 				</p>
 			</div>
 			<div class="md:justify-self-end">
